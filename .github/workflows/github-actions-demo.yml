@@ -34,7 +34,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -a -m "Add changes"
       - name: Push changes
-        uses: actions/push@master
+        uses: actions-js/push@master
         with:
           github_token: ${{ secrets.MY_ACTION_TOKEN }}
           branch: ${{ github.ref }}
