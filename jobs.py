@@ -53,7 +53,7 @@ def search ():
         # print("---------" * 10 )
         # print()
     # print("=========" * 10 )
-    print('<tr><td>' + ("=========" * 10 + '</td></tr>')
+    print('<tr><td>' + "=========" * 10 + '</td></tr>')
     print()
     print('</table>')
     print('</body>')
