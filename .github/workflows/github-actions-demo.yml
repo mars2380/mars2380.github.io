@@ -56,6 +56,6 @@ jobs:
           git remote -v
           git add .
           git commit -m "generated"
+          echo "Push"
           git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          
           git push
