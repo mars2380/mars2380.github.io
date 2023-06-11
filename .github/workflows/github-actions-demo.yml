@@ -20,5 +20,5 @@ jobs:
           ls ${{ github.workspace }}
       - name: Check Python version
         run: |
-          python3 version
+          python version
       - run: echo "🍏 This job's status is ${{ job.status }}."
