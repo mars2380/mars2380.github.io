@@ -49,6 +49,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          github_token: ${{ secrets.MY_ACTION_TOKEN }}
       - run: |
           date > generated.txt
           git config user.name github-actions
