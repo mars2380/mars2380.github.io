@@ -22,5 +22,6 @@ jobs:
         run: |
           python --version
       - name: Install Python dependency
+        run: |
           pip install -r requirements.txt
       - run: echo "🍏 This job's status is ${{ job.status }}."
