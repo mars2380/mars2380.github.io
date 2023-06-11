@@ -47,11 +47,8 @@ def search ():
             print('<table>')
             # print('<tr><td>' + title + '</td></tr>')
             # print('<tr><td>' + link + '</td></tr>')
-            print('<tr><td>' + '<a href=' + link + '>' + title + '</a>' + '</td></tr>')
+            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td></tr>')
             print('<tr><td>' + date + '</td></tr>')
-
-
-
             # print('<tr><td>' + '</td></tr>')
             # print()
         print('<tr><td>' + "---------" * 10 + '</td></tr>')
