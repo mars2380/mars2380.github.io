@@ -27,4 +27,9 @@ jobs:
       - name: Run Python Job
         run: |
           python jobs.py | tee index.html
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
       - run: echo "🍏 This job's status is ${{ job.status }}."
