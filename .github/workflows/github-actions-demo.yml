@@ -27,9 +27,15 @@ jobs:
       - name: Run Python Job
         run: |
           python jobs.py | tee index.html
-      - name: Commit & Push changes
-        uses: actions-js/push@master
-        with:
-          github_token: ${{ secrets.ACTION }}
+
+      - name: Add Mask
+        run: echo "::add-mask::${{ secrets.MY_ACTION_TOKEN }}"
+      - name: Echo a secret  
+        run: echo "your secret token is ${{ secrets.MY_ACTION_TOKEN }}"
+
+      # - name: Commit & Push changes
+      #   uses: actions-js/push@master
+      #   with:
+      #     github_token: ${{ secrets.ACTION }}
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
