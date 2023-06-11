@@ -40,14 +40,22 @@ def search ():
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
             
-            print(title)
-            print(link)
-            print(date)
+            print('<html>')
+            print('<head>')
+            print('<title>JobServe</title>')
+            print('<body>')
+            print('<table>')
+            print('<tr><td>' + title + '</td></tr>')
+            print('<tr><td>' + link + '</td></tr>')
+            print('<tr><td>' + date + '</td></tr>')
             print()
         print("---------" * 10 )
         print()
     print("=========" * 10 )
     print()
+    print('</table>')
+    print('</body>')
+    print('</html>')
 
 def cvs ():
     with open('jobs.csv', 'w', newline='') as csvfile:
