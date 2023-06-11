@@ -8,7 +8,7 @@ name: Deploy static content to Pages
 
 on:
   workflow_run:
-    workflows: ["Run Job 🚀"]
+    workflows: ["Run Job"]
     types:
       - completed
 
