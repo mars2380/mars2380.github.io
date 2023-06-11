@@ -26,5 +26,5 @@ jobs:
           pip install -r requirements.txt
       - name: Run Python Job
         run: |
-          python jobs.py > index.html
+          python jobs.py | tee index.html
       - run: echo "🍏 This job's status is ${{ job.status }}."
