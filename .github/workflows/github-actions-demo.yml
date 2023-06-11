@@ -28,14 +28,14 @@ jobs:
         run: |
           python jobs.py | tee index.html
 
-      - name: Add Mask
-        run: echo "::add-mask::${{ secrets.MY_ACTION_TOKEN }}"
-      - name: Echo a secret  
-        run: echo "your secret token is ${{ secrets.MY_ACTION_TOKEN }}"
+      # - name: Add Mask
+      #   run: echo "::add-mask::${{ secrets.MY_ACTION_TOKEN }}"
+      # - name: Echo a secret  
+      #   run: echo "your secret token is ${{ secrets.MY_ACTION_TOKEN }}"
 
-      # - name: Commit & Push changes
-      #   uses: actions-js/push@master
-      #   with:
-      #     github_token: ${{ secrets.ACTION }}
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.MY_ACTION_TOKEN }}
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
