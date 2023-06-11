@@ -54,6 +54,6 @@ jobs:
           git config user.name Alessandro Di Micoli
           git add .
           git commit -m "generated"
-          git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          # git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git remote -v
           git push
