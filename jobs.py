@@ -24,7 +24,8 @@ def page (URL):
 def search ():
     URLS = page(URL)
     for i in URLS:
-        print(i)
+        # print(i)
+        print('<tr><td>' + i + '</td></tr>')
         request = requests.get(i, verify=False)
         soup = BeautifulSoup(request.content, "html.parser")
         results = soup.find(id="cnt")
@@ -44,10 +45,14 @@ def search ():
             print('<title>JobServe</title>')
             print('<body>')
             print('<table>')
-            print('<tr><td>' + title + '</td></tr>')
-            print('<tr><td>' + link + '</td></tr>')
+            # print('<tr><td>' + title + '</td></tr>')
+            # print('<tr><td>' + link + '</td></tr>')
+            print('<tr><td>' + '<a href=' + link + '>' + title + '</a>' + '</td></tr>')
             print('<tr><td>' + date + '</td></tr>')
-            print('<tr><td>' + '</td></tr>')
+
+
+
+            # print('<tr><td>' + '</td></tr>')
             # print()
         print('<tr><td>' + "---------" * 10 + '</td></tr>')
         # print("---------" * 10 )
