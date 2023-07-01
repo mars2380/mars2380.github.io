@@ -34,7 +34,8 @@ jobs:
           pip install -r requirements.txt
       - name: Run Python Job
         run: |
-          python jobs.py | tee index.html
+          echo $(date) | tee index.html
+          python jobs.py | tee -a index.html
       - name: Commit & Push changes
         run: |
           git pull
