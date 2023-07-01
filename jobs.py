@@ -24,13 +24,13 @@ def page (URL):
 
 def search ():
     URLS = page(URL)
-    datetime = datetime.datetime.now()
+    now = datetime.datetime.now()
     print('<html>')
     print('<head>')
     print('<title>JobServe</title>')
     print('<body>')
     print('<table>')
-    print('<tr><td>' + datetime + '</td></tr>')
+    print('<tr><td>' + str(now) + '</td></tr>')
     for i in URLS:
         # print(i)
         print('<tr><td>' + i + '</td></tr>')
