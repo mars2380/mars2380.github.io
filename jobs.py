@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import datetime
 
 def page (URL):
     page = requests.get(URL, verify=False)
@@ -40,6 +41,8 @@ def search ():
             title = title_element.text.strip()
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
+            datetime = datetime.datetime.now()
+
             print('<html>')
             print('<head>')
             print('<title>JobServe</title>')
@@ -47,6 +50,7 @@ def search ():
             print('<table>')
             # print('<tr><td>' + title + '</td></tr>')
             # print('<tr><td>' + link + '</td></tr>')
+            print('<tr><td>' + datetime + '</td></tr>')
             print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td></tr>')
             print('<tr><td>' + date + '</td></tr>')
             # print('<tr><td>' + '</td></tr>')
