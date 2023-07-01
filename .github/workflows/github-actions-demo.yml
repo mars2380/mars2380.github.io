@@ -35,6 +35,7 @@ jobs:
       - name: Run Python Job
         run: |
           echo $(date) | tee index.html
+          echo | tee -a index.html
           python jobs.py | tee -a index.html
       - name: Commit & Push changes
         run: |
