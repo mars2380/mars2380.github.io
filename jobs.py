@@ -24,6 +24,13 @@ def page (URL):
 
 def search ():
     URLS = page(URL)
+    datetime = datetime.datetime.now()
+    print('<html>')
+    print('<head>')
+    print('<title>JobServe</title>')
+    print('<body>')
+    print('<table>')
+    print('<tr><td>' + datetime + '</td></tr>')
     for i in URLS:
         # print(i)
         print('<tr><td>' + i + '</td></tr>')
@@ -41,16 +48,8 @@ def search ():
             title = title_element.text.strip()
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
-            datetime = datetime.datetime.now()
-
-            print('<html>')
-            print('<head>')
-            print('<title>JobServe</title>')
-            print('<body>')
-            print('<table>')
             # print('<tr><td>' + title + '</td></tr>')
             # print('<tr><td>' + link + '</td></tr>')
-            print('<tr><td>' + datetime + '</td></tr>')
             print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td></tr>')
             print('<tr><td>' + date + '</td></tr>')
             # print('<tr><td>' + '</td></tr>')
