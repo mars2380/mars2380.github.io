@@ -39,6 +39,10 @@ def search ():
         results = soup.find(id="cnt")
         # print(results.prettify())
 
+        summary_element = results.find("span", class_="searchval")
+        summary = summary_element.text
+        print('<tr><td>' + summary + '</td></tr>')
+
         job_elements = results.find_all("li")
         for job_element in job_elements:
             title_element = job_element.find("span", class_="position")
