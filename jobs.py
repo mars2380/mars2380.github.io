@@ -30,7 +30,8 @@ def search ():
     print('<title>JobServe</title>')
     print('<body>')
     print('<table>')
-    print('<tr><td>' + str(now) + '</td></tr>')
+    # print('<tr><td>' + str(now) + '</td></tr>')
+    print('<tr><td>' + str(now.strftime("%a %x %X")) + '</td></tr>')
     for i in URLS:
         # print(i)
         print('<tr><td>' + i + '</td></tr>')
