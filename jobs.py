@@ -2,6 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
+URL0 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=78A9B33B42D9BA8B"
+URL1 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DC2CD21F55D1F339"
+URL2 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=4D8DA2CE347175ED"
+URL3 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DE3E429DC7D11447"
+URL4 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=AA6A02598408858D"
+URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=E2FB1B9115F1CBEC"
+
+
 def page (URL):
     page = requests.get(URL, verify=False)
     soup = BeautifulSoup(page.content, "html.parser")
@@ -100,13 +108,6 @@ def button ():
     print('</html>')
 
 def main():
-
-    URL0 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=78A9B33B42D9BA8B"
-    URL1 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DC2CD21F55D1F339"
-    URL2 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=4D8DA2CE347175ED"
-    URL3 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DE3E429DC7D11447"
-    URL4 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=AA6A02598408858D"
-    URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=E2FB1B9115F1CBEC"
 
     urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
     # urllists = [ URL0 ]
