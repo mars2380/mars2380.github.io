@@ -7,8 +7,7 @@ URL1 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DC2CD
 URL2 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=4D8DA2CE347175ED"
 URL3 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DE3E429DC7D11447"
 URL4 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=AA6A02598408858D"
-URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=E2FB1B9115F1CBEC"
-
+URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=7A69F1D9B674924A"
 
 def page (URL):
     page = requests.get(URL, verify=False)
@@ -99,7 +98,31 @@ def search (urllist):
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
 
-            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
+            jobdetails = jobinfos(link)
+            
+            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>' + '</td> <td> ' + jobdetails + '</td></tr>')
+
+            # employment_elements = results.find_all("div", class_="jobinfo")
+            # for employment_element in employment_elements:
+            #     perm_link_element = employment_element.find("a")
+            #     employment = employment_element.text
+            #     print(perm_link_element)
+            
+            #     print('<tr><td>' + '<a href="' + perm_link_element + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
+
+def jobinfos (link):
+
+    request = requests.get(link, verify=False)
+    soup = BeautifulSoup(request.content, "html.parser")
+    results = soup.find(id="cnt")
+
+    job = results.find_all("div", class_="jobinfo")
+    job = results.prettify()
+
+    # jobinfo = job.find("div", class_="jobinfo")
+
+    # print(jobdetails.prettify())
+    return job
 
 def button ():
 
@@ -109,14 +132,18 @@ def button ():
 
 def main():
 
-    urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
-    # urllists = [ URL0 ]
-
+    # urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
+    urllists = [ URL5 ]
     head ()
     for urllist in urllists:
-        # page(URL)
         search(urllist)
     button ()
+
+    # # ONLY for Testing
+    # urllists = [ URL0 ]
+    # for urllist in urllists:
+    #     # page(urllist)
+    #     search(urllist)
 
 if __name__ == "__main__":
     main()
