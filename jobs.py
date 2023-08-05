@@ -98,9 +98,10 @@ def search (urllist):
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
 
-            jobdetails = jobinfos(link)
+            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
             
-            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>' + '</td> <td> ' + jobdetails + '</td></tr>')
+            # jobdetails = jobinfos(link)
+            # print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>' + '</td> <td> ' + jobdetails + '</td></tr>')
 
             # employment_elements = results.find_all("div", class_="jobinfo")
             # for employment_element in employment_elements:
@@ -132,8 +133,8 @@ def button ():
 
 def main():
 
-    # urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
-    urllists = [ URL5 ]
+    urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
+    # urllists = [ URL5 ]
     head ()
     for urllist in urllists:
         search(urllist)
