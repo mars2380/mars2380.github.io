@@ -98,8 +98,8 @@ def search (urllist):
             link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
 
-            print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
-            
+            print('<tr><td>' + '<a href="' + link + 'target="_blank" rel="noopener noreferrer">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
+
             # jobdetails = jobinfos(link)
             # print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>' + '</td> <td> ' + jobdetails + '</td></tr>')
 
