@@ -1,0 +1,256 @@
+[2023-11-13 19:28:23Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'Credentials': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'Runner': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.runner'
+[2023-11-13 19:28:23Z INFO Listener] Runner is built for OSX (Arm64) - osx-arm64.
+[2023-11-13 19:28:23Z INFO Listener] RuntimeInformation: Darwin 22.6.0 Darwin Kernel Version 22.6.0: Wed Jul  5 22:22:05 PDT 2023; root:xnu-8796.141.3~6/RELEASE_ARM64_T6000.
+[2023-11-13 19:28:23Z INFO Listener] Version: 2.311.0
+[2023-11-13 19:28:23Z INFO Listener] Commit: f5cff308c83746dddd726a9a28a1583872305aaa
+[2023-11-13 19:28:23Z INFO Listener] Culture: en-US
+[2023-11-13 19:28:23Z INFO Listener] UI Culture: en-US
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO Listener] Validating directory permissions for: '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO CommandLineParser] Parse
+[2023-11-13 19:28:23Z INFO CommandLineParser] Parsing 5 args
+[2023-11-13 19:28:23Z INFO CommandLineParser] parsing argument
+[2023-11-13 19:28:23Z INFO CommandLineParser] HasArgs: False
+[2023-11-13 19:28:23Z INFO CommandLineParser] Adding Command: configure
+[2023-11-13 19:28:23Z INFO CommandLineParser] parsing argument
+[2023-11-13 19:28:23Z INFO CommandLineParser] HasArgs: True
+[2023-11-13 19:28:23Z INFO CommandLineParser] arg: url
+[2023-11-13 19:28:23Z INFO CommandLineParser] parsing argument
+[2023-11-13 19:28:23Z INFO CommandLineParser] HasArgs: True
+[2023-11-13 19:28:23Z INFO CommandLineParser] Adding option 'url': 'https://github.com/mars2380/mars2380.github.io'
+[2023-11-13 19:28:23Z INFO CommandLineParser] parsing argument
+[2023-11-13 19:28:23Z INFO CommandLineParser] HasArgs: True
+[2023-11-13 19:28:23Z INFO CommandLineParser] arg: token
+[2023-11-13 19:28:23Z INFO CommandLineParser] parsing argument
+[2023-11-13 19:28:23Z INFO CommandLineParser] HasArgs: True
+[2023-11-13 19:28:23Z INFO CommandLineParser] Adding option 'token': '***'
+[2023-11-13 19:28:23Z INFO Listener] Arguments parsed
+[2023-11-13 19:28:23Z INFO Runner] ExecuteCommand
+[2023-11-13 19:28:23Z INFO ConfigurationStore] currentAssemblyLocation: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin/Runner.Listener.dll
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] binPath: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] RootFolder: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'Runner': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.runner'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] ConfigFilePath: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.runner
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'Credentials': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] CredFilePath: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_migrated'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] MigratedCredFilePath: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_migrated
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:23Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:23Z INFO HostContext] Well known config file 'Service': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.service'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.service
+[2023-11-13 19:28:23Z INFO CommandSettings] Flag 'help': 'False'
+[2023-11-13 19:28:23Z INFO CommandSettings] Flag 'version': 'False'
+[2023-11-13 19:28:23Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-11-13 19:28:23Z INFO CommandSettings] Flag 'check': 'False'
+[2023-11-13 19:28:23Z INFO CommandSettings] Command 'configure': 'True'
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE: |                       
+[2023-11-13 19:28:23Z INFO Terminal] WRITE: Self-hosted runner registration
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE:                         |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: |                                                                              |
+[2023-11-13 19:28:23Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2023-11-13 19:28:23Z INFO ConfigurationManager] ConfigureAsync
+[2023-11-13 19:28:23Z INFO CommandSettings] Flag 'generateServiceConfig': 'False'
+[2023-11-13 19:28:23Z INFO ConfigurationStore] IsConfigured()
+[2023-11-13 19:28:23Z INFO ConfigurationStore] IsConfigured: False
+[2023-11-13 19:28:23Z INFO ConfigurationManager] Is configured: False
+[2023-11-13 19:28:23Z INFO CommandSettings] Arg 'url': 'https://github.com/mars2380/mars2380.github.io'
+[2023-11-13 19:28:23Z INFO CommandSettings] Remove url from Arg dictionary.
+[2023-11-13 19:28:23Z INFO CommandSettings] Arg 'token': '***'
+[2023-11-13 19:28:23Z INFO CommandSettings] Remove token from Arg dictionary.
+[2023-11-13 19:28:24Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (DFD3:DBA9:2C4F22A4:2CD7D6D9:655278D8)
+[2023-11-13 19:28:24Z INFO ConfigurationManager] Using V2 flow: False
+[2023-11-13 19:28:24Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2023-11-13 19:28:24Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:28:24Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-11-13 19:28:24Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:28:24Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:28:24Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-11-13 19:28:24Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:28:24Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:28:24Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-11-13 19:28:24Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:28:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:28:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:28:25Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:28:25Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:28:25Z INFO ConfigurationManager] Test Connection complete.
+[2023-11-13 19:28:25Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:25Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:25Z INFO HostContext] Well known config file 'RSACredentials': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams'
+[2023-11-13 19:28:25Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2023-11-13 19:28:25Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams
+[2023-11-13 19:28:25Z INFO RSAFileKeyManager] Which: 'chmod'
+[2023-11-13 19:28:25Z INFO RSAFileKeyManager] Location: '/bin/chmod'
+[2023-11-13 19:28:25Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:28:25Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper] Starting process:
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Arguments: '600 /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Working directory: '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper] Process started with process id 72228, waiting for process exit.
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-11-13 19:28:25Z INFO ProcessInvokerWrapper] Finished process 72228 with exit code 0, and elapsed time 00:00:00.1010100.
+[2023-11-13 19:28:25Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams
+[2023-11-13 19:28:25Z INFO CommandSettings] Arg 'runnergroup': ''
+[2023-11-13 19:28:25Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:28:25Z INFO PromptManager] ReadValue
+[2023-11-13 19:28:25Z INFO Terminal] WRITE: Enter the name of the runner group to add this runner to: 
+[2023-11-13 19:28:25Z INFO Terminal] WRITE: [press Enter for Default] 
+[2023-11-13 19:28:25Z INFO Terminal] READ LINE
+[2023-11-13 19:28:36Z INFO Terminal] Read value: ''
+[2023-11-13 19:28:36Z INFO PromptManager] Falling back to the default: 'Default'
+[2023-11-13 19:28:36Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:28:36Z INFO ConfigurationManager] Found a self-hosted runner group with id 1 and name Default
+[2023-11-13 19:28:36Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-11-13 19:28:36Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-11-13 19:28:36Z INFO CommandSettings] Arg 'name': ''
+[2023-11-13 19:28:36Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:28:36Z INFO PromptManager] ReadValue
+[2023-11-13 19:28:36Z INFO Terminal] WRITE: Enter the name of runner: 
+[2023-11-13 19:28:36Z INFO Terminal] WRITE: [press Enter for LVVK92QG36] 
+[2023-11-13 19:28:36Z INFO Terminal] READ LINE
+[2023-11-13 19:28:55Z INFO Terminal] Read value: ''
+[2023-11-13 19:28:55Z INFO PromptManager] Falling back to the default: 'LVVK92QG36'
+[2023-11-13 19:28:55Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:28:55Z INFO CommandSettings] Arg 'labels': ''
+[2023-11-13 19:28:55Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:28:55Z INFO PromptManager] ReadValue
+[2023-11-13 19:28:55Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'macOS', 'ARM64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2023-11-13 19:28:55Z INFO Terminal] WRITE: [press Enter to skip] 
+[2023-11-13 19:28:55Z INFO Terminal] READ LINE
+[2023-11-13 19:29:22Z INFO Terminal] Read value: 'ADM, Macbook'
+[2023-11-13 19:29:22Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2023-11-13 19:29:22Z ERR  GitHubActionsService] POST request to https://pipelinesghubeus8.actions.githubusercontent.com/VuSjRuoTjH8rwogukrTNi8xGqWTWY6iiVheDfgw3GGTzupMTcv/_apis/distributedtask/pools/1/agents failed. HTTP Status: BadRequest
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:29:22Z ERR  Terminal] WRITE ERROR (exception):
+[2023-11-13 19:29:22Z ERR  Terminal] GitHub.Services.WebApi.VssServiceResponseException: Label ' Macbook' is not valid. Labels must be less than 256 characters in length and may not start or end with whitespace characters. (Parameter 'agent.Labels.Name')
+ ---> System.ArgumentException: Label ' Macbook' is not valid. Labels must be less than 256 characters in length and may not start or end with whitespace characters. (Parameter 'agent.Labels.Name')
+   --- End of inner exception stack trace ---
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.ConfigureAsync(CommandSettings command)
+[2023-11-13 19:29:22Z ERR  Terminal] #####################################################
+[2023-11-13 19:29:22Z ERR  Terminal] System.ArgumentException: Label ' Macbook' is not valid. Labels must be less than 256 characters in length and may not start or end with whitespace characters. (Parameter 'agent.Labels.Name')
+[2023-11-13 19:29:22Z ERR  Terminal] WRITE ERROR: Failed to add the runner. Try again or ctrl-c to quit
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-11-13 19:29:22Z INFO CommandSettings] Arg 'name': ''
+[2023-11-13 19:29:22Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:29:22Z INFO PromptManager] ReadValue
+[2023-11-13 19:29:22Z INFO Terminal] WRITE: Enter the name of runner: 
+[2023-11-13 19:29:22Z INFO Terminal] WRITE: [press Enter for LVVK92QG36] 
+[2023-11-13 19:29:22Z INFO Terminal] READ LINE
+[2023-11-13 19:29:29Z INFO Terminal] Read value: ''
+[2023-11-13 19:29:29Z INFO PromptManager] Falling back to the default: 'LVVK92QG36'
+[2023-11-13 19:29:29Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:29:29Z INFO CommandSettings] Arg 'labels': ''
+[2023-11-13 19:29:29Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:29:29Z INFO PromptManager] ReadValue
+[2023-11-13 19:29:29Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'macOS', 'ARM64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2023-11-13 19:29:29Z INFO Terminal] WRITE: [press Enter to skip] 
+[2023-11-13 19:29:29Z INFO Terminal] READ LINE
+[2023-11-13 19:29:38Z INFO Terminal] Read value: 'ADM'
+[2023-11-13 19:29:38Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:29:38Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-11-13 19:29:38Z INFO CommandSettings] Flag 'no-default-labels': 'False'
+[2023-11-13 19:29:38Z INFO CommandSettings] Flag 'disableupdate': 'False'
+[2023-11-13 19:29:38Z INFO CommandSettings] Flag 'ephemeral': 'False'
+[2023-11-13 19:29:38Z INFO ConfigurationStore] Saving OAuth credential @ /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials
+[2023-11-13 19:29:38Z INFO ConfigurationStore] Credentials Saved.
+[2023-11-13 19:29:38Z INFO ConfigurationStore] HasCredentials()
+[2023-11-13 19:29:38Z INFO ConfigurationStore] stored True
+[2023-11-13 19:29:38Z INFO CredentialManager] GetCredentialProvider
+[2023-11-13 19:29:38Z INFO CredentialManager] Creating type OAuth
+[2023-11-13 19:29:38Z INFO CredentialManager] Creating credential type: OAuth
+[2023-11-13 19:29:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams
+[2023-11-13 19:29:38Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:29:38Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:29:38Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:29:38Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:29:38Z INFO RunnerServer] EstablishVssConnection
+[2023-11-13 19:29:38Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:29:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-11-13 19:29:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams
+[2023-11-13 19:29:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/.credentials_rsaparams
+[2023-11-13 19:29:39Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-11-13 19:29:39Z INFO CommandSettings] Arg 'work': ''
+[2023-11-13 19:29:39Z INFO CommandSettings] Flag 'unattended': 'False'
+[2023-11-13 19:29:39Z INFO PromptManager] ReadValue
+[2023-11-13 19:29:39Z INFO Terminal] WRITE: Enter name of work folder: 
+[2023-11-13 19:29:39Z INFO Terminal] WRITE: [press Enter for _work] 
+[2023-11-13 19:29:39Z INFO Terminal] READ LINE
+[2023-11-13 19:29:46Z INFO Terminal] Read value: ''
+[2023-11-13 19:29:46Z INFO PromptManager] Falling back to the default: '_work'
+[2023-11-13 19:29:46Z INFO ConfigurationStore] Saving runner settings.
+[2023-11-13 19:29:46Z INFO ConfigurationStore] Settings Saved.
+[2023-11-13 19:29:46Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:29:46Z INFO Terminal] WRITE LINE: 
+[2023-11-13 19:29:46Z INFO OsxServiceControlManager] Service name 'actions.runner.mars2380-mars2380.github.io.LVVK92QG36' display name 'GitHub Actions Runner (mars2380-mars2380.github.io.LVVK92QG36)' will be used for service configuration.
+[2023-11-13 19:29:46Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:29:46Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:29:46Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:29:46Z INFO HostContext] Well known directory 'Bin': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/bin'
+[2023-11-13 19:29:46Z INFO HostContext] Well known directory 'Root': '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:29:46Z INFO UnixUtil] Which: 'chmod'
+[2023-11-13 19:29:46Z INFO UnixUtil] Location: '/bin/chmod'
+[2023-11-13 19:29:46Z INFO UnixUtil] Running /bin/chmod 755 "/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/svc.sh"
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper] Starting process:
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Arguments: '755 "/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner/svc.sh"'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Working directory: '/Users/i35032/myCode/Github/mars2380/mars2380.github.io/actions-runner'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper] Process started with process id 75327, waiting for process exit.
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-11-13 19:29:46Z INFO ProcessInvokerWrapper] Finished process 75327 with exit code 0, and elapsed time 00:00:00.0867064.
+[2023-11-13 19:29:46Z INFO Listener] Runner execution has finished with return code 0
