@@ -32,6 +32,7 @@ jobs:
 
       - name: List files in the repository
         run: |
+          rm index.html  
           ls ${{ github.workspace }}
 
       - name: Check Python version
