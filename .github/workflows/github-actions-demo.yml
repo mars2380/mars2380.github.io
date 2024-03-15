@@ -37,6 +37,7 @@ jobs:
           python jobs.py | tee index.html
       - name: Commit & Push changes
         run: |
+          ls -l
           git status
           git pull
           git config user.name github-actions
