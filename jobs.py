@@ -66,7 +66,8 @@ def head ():
     """
     print(head)
 
-    print('<title>JobServe</title>')
+    # print('<title>JobServe</title>')
+    print('<a href="https://mars2380.github.io/new.html"_blank" rel="noopener noreferrer">NewPage</a>')
     print('<body>')
     # print('<h1>JobServe Table</h1>')
     print('<table id="customers">')
@@ -133,8 +134,8 @@ def button ():
 
 def main():
 
-    urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
-    # urllists = [ URL5 ]
+    # urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
+    urllists = [ URL5 ]
     head ()
     for urllist in urllists:
         search(urllist)
