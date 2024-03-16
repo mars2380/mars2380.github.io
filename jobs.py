@@ -134,8 +134,8 @@ def button ():
 
 def main():
 
-    # urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
-    urllists = [ URL5 ]
+    urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
+    # urllists = [ URL5 ]
     head ()
     for urllist in urllists:
         search(urllist)
