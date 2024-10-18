@@ -42,7 +42,7 @@ def head ():
         #customers {
         font-family: Arial, Helvetica, sans-serif;
         border-collapse: collapse;
-        width: 80%;
+        width: 100%;
         }
 
         #customers td, #customers th {
