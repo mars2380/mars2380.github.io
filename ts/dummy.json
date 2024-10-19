@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "age": 28,
+        "active": true
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "age": 34,
+        "active": false
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "age": 22,
+        "active": true
+      }
+    ],
+    "settings": {
+      "theme": "dark",
+      "notifications": true,
+      "language": "en"
+    }
+}
