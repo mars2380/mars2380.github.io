@@ -1,3 +1,12 @@
+bootstrap:
+	python -m venv new_env
+	source new_env/bin/activate
+	pip list
+	pip install --upgrade pip
+	pip install -r requirements.txt
+
+run:
+	python3 jobs_v2.py > job.json
 
 git_push:
 	git pull && \
