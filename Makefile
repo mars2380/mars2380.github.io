@@ -1,6 +1,6 @@
 bootstrap:
 	python -m venv new_env
-	source new_env/bin/activate
+	bash ./new_env/bin/activate || true
 	pip list
 	pip install --upgrade pip
 	pip install -r requirements.txt
