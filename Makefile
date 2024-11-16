@@ -7,6 +7,7 @@ bootstrap:
 
 run:
 	python3 jobs_v2.py > job.json
+	# python3 jobs_v2.py > job.txt
 
 git_push:
 	git pull && \
