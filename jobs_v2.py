@@ -33,7 +33,6 @@ def page (url):
 
 def job (pages):
     job_list = {'data': []}
-    # job_list = []
 
     for i in pages:
         request = requests.get(i, verify=False)
@@ -62,18 +61,15 @@ def job (pages):
 
 
 def main():
-    # jobserve_urls_lists = [ jobserve_url0, jobserve_url1, jobserve_url2, jobserve_url3, jobserve_url4, jobserve_url5]
-    jobserve_urls_lists = [ jobserve_url0, jobserve_url1]
+    jobserve_urls_lists = [ jobserve_url0, jobserve_url1, jobserve_url2, jobserve_url3, jobserve_url4, jobserve_url5]
+    # jobserve_urls_lists = [ jobserve_url0, jobserve_url1]
 
     pages = []
     for jobserve_url in jobserve_urls_lists:
         pages.append(page(jobserve_url))
 
     pages_list = list(set(sum(pages, [])))
-    # job(pages_list)
     print(job(pages_list))
-    # print(type(result))
-
 
 if __name__ == "__main__":
     main()
