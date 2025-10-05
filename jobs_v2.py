@@ -30,7 +30,6 @@ def page (url):
 
     return pages
 
-
 def job (pages):
     job_list = {'data': []}
 
@@ -58,7 +57,6 @@ def job (pages):
     json_data = json.dumps(job_list)
     # print(json_data)
     return json_data
-
 
 def main():
     jobserve_urls_lists = [ jobserve_url0, jobserve_url1, jobserve_url2, jobserve_url3, jobserve_url4, jobserve_url5]

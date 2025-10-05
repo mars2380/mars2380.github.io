@@ -45,7 +45,7 @@ jobs:
 
       - name: Run Python Job
         run: |
-          python jobs.py | tee index.html
+          python jobs.py | tee index_old.html
 
       - name: Commit & Push changes
         run: |
