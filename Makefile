@@ -15,6 +15,7 @@ run_test:
 
 git_push: git_pull
 	@git status
+	@git remote -v
 	@echo "----------------------------"
 	@git config user.name github-actions
 	@git config user.email github-actions@github.com
@@ -23,7 +24,6 @@ git_push: git_pull
 	@echo "----------------------------"
 	@git push
 
-# 	@git remote -v && \
 
 git_pull:
 	git pull
