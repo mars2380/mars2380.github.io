@@ -18,9 +18,9 @@ git_push: git_pull
 	@echo "----------------------------"
 	@git config user.name github-actions
 	@git config user.email github-actions@github.com
-	@echo "----------------------------"
 	@git add .
 	@git commit -m "Update index.html" || echo "No changes to commit"
+	@echo "----------------------------"
 	@git push
 
 # 	@git remote -v && \
