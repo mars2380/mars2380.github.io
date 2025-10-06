@@ -13,7 +13,7 @@ run:
 run_test:
 	python3 job_test.py 
 
-git_push:
+git_push: git_pull
 	git pull && \
 	git config user.name github-actions && \
 	git config user.email github-actions@github.com && \
@@ -22,4 +22,6 @@ git_push:
 	git commit -m "Update index.html" && \
 	git push
 
+git_pull:
+	git pull
 # git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} && \
