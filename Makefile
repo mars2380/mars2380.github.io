@@ -15,11 +15,15 @@ run_test:
 
 git_push: git_pull
 	git status && \
+	echo "----------------------------" && \
 	git remote -v && \
+	echo "----------------------------" && \
 	git config user.name github-actions && \
 	git config user.email github-actions@github.com && \
+	echo "----------------------------" && \
 	git add . && \
 	git commit -m "Update index.html" && \
+	echo "----------------------------" && \
 	git push
 
 git_pull:
