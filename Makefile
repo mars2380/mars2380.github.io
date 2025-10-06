@@ -20,7 +20,6 @@ git_push:
 	git remote -v && \
 	git add . && \
 	git commit -m "Update index.html" && \
-	echo "Push" && \
 	git push
 
 # git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} && \
