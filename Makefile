@@ -24,4 +24,5 @@ git_push: git_pull
 
 git_pull:
 	git pull
+
 # git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} && \
