@@ -527,7 +527,7 @@ def main():
     html_content = generate_html(jobs)
     
     # Write index.html (GitHub Pages default)
-    with open('index.html', 'w', encoding='utf-8') as f:
+    with open('index_new.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
     
     print(f"✅ index.html generated successfully!")
