@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Job Listings Dashboard - Automatically updated job postings">
+    <title>Job Listings Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .update-badge {
+            display: inline-block;
+            background: #51cf66;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        select, button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .job-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .job-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .job-title {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .job-summary {
+            color: #666;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9ff;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        .job-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .job-date {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .job-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        .job-link:hover {
+            transform: scale(1.05);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            background: white;
+            border-radius: 15px;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .stat-number {
+                font-size: 2em;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Job Listings Dashboard</h1>
+            <div class="timestamp">
+                🕒 Last Updated: 2025-10-06 21:45:33 UTC
+                <span class="update-badge">Auto-Updated</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalJobs">0</div>
+                <div class="stat-label">Total Jobs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="uniqueSearches">0</div>
+                <div class="stat-label">Unique Searches</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="filteredCount">0</div>
+                <div class="stat-label">Showing</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search jobs...">
+            <div class="filter-group">
+                <select id="searchFilter">
+                    <option value="all">All Searches</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">By Title</option>
+                </select>
+                <button onclick="resetFilters()">Reset</button>
+            </div>
+        </div>
+
+        <div class="job-list" id="jobList"></div>
+
+        <div class="footer">
+            <p>Automatically updated via GitHub Actions</p>
+            <p><a href="https://github.com/yourusername/yourrepo" target="_blank">View Source on GitHub</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Embedded job data
+        const jobsData = [
+  {
+    "summary": "DevOps",
+    "title": "Senior Project Manager",
+    "link": "https://www.jobserve.com/gb/en/mob/job/42C8CF41F691857FB1?shid=90763797F7A2C53277E1&page=1",
+    "date": "1 hour ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Integration Developer- Outside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1D483A61AD3504A163?shid=90763797F7A2C53277E1&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Solution Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/991B644EB9CA3A929E?shid=90763797F7A2C53277E1&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Principal Security Architect - Azure Cloud",
+    "link": "https://www.jobserve.com/gb/en/mob/job/BCDDAAB5344EF40EC4?shid=90763797F7A2C53277E1&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "GCP Security Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1885B83B60EA1E58CF?shid=90763797F7A2C53277E1&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "GCP Security Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/340FCCDDEC509AAED2?shid=90763797F7A2C53277E1&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "SharePoint SPFx Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/06F96055E6AAC6FE2D?shid=90763797F7A2C53277E1&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Azure Cloud Engineer/Devops- DV Cleared- Milton Keynes/London - \u00a3600 a day",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E620EB21E2E9B1BA7B?shid=90763797F7A2C53277E1&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "IT Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/5865E08310DAD54075?shid=90763797F7A2C53277E1&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "AWS DevOps Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D154A9DE958B307866?shid=90763797F7A2C53277E1&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Cyber Security Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/505C09FDD4F578E799?shid=90763797F7A2C53277E1&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Senior SQL Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8171BDAD459EACDF9B?shid=90763797F7A2C53277E1&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "WebMethods Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A17D73175516220818?shid=90763797F7A2C53277E1&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Gen AI Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A1588586955F446DF8?shid=90763797F7A2C53277E1&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Full Stack Software Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/61F5205819BC55FBBD?shid=90763797F7A2C53277E1&page=1",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "IFS Cloud SME",
+    "link": "https://www.jobserve.com/gb/en/mob/job/205C05018C8D6495C4?shid=90763797F7A2C53277E1&page=1",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "DevOps Engineer - SC Cleared - Remote",
+    "link": "https://www.jobserve.com/gb/en/mob/job/712DAF3B957EF6C71E?shid=90763797F7A2C53277E1&page=1",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Senior CRM Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/924E29A58ED3A8A8FA?shid=90763797F7A2C53277E1&page=1",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "CRM Technical Lead Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/356A84316DFB690CCC?shid=90763797F7A2C53277E1&page=1",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "Informatica IDMC Data Engineer & PWC",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6D9609FC89C1DD7149?shid=90763797F7A2C53277E1&page=1",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "HPC Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D0CEF886B01950D27E?shid=90763797F7A2C53277E1&page=1",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "DevOps",
+    "title": "GCP Cloud Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/597012BDE155396441?shid=90763797F7A2C53277E1&page=1",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior Project Manager",
+    "link": "https://www.jobserve.com/gb/en/mob/job/42C8CF41F691857FB1?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "1 hour ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Data Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/383EEAE4903DA435D6?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "3 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Data Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/21D252B3A997DC7848?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Network Design Specialist - RF Planning Tools - Inside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/FF69698313BAE368D7?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Ai Tester - 6 month contract - Inside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/655CD1C2D13BE04DA3?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "IT Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/5865E08310DAD54075?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior + Associate Security Analysts - Security-cleared",
+    "link": "https://www.jobserve.com/gb/en/mob/job/FF8A2AA997AB9F1A01?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Site Reliability Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/EAA916AF6A2ED3E423?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior Java Developer Contract - Analytics/Risk/PnL/Caching/AWS/PostgreSQL/Kafka/TDD",
+    "link": "https://www.jobserve.com/gb/en/mob/job/7ED5C0E9FE761DB110?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Network Engineer - Hedge Fund - IP, Arista, Automation, Switching, AWS, Ansible/Python - Contract",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6A0AE09C5A29C548E0?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Hedge Fund Trading - Contract Python Developer - Futures, FX, Credit, PnL, Data eng, AWS, Javascript",
+    "link": "https://www.jobserve.com/gb/en/mob/job/292F67E5AD2C2E353F?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior Front-end Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/5B9A0F84075DA6C8A4?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security AI Solution Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8DD9CF238952EE4B44?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Performance Analyst - hybrid - 6 months 600-650 inside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/C0349945C47D08CD85?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "9 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/220F3F309EAED6A58D?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "9 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "AWS DevOps Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D154A9DE958B307866?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Cyber Security Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/505C09FDD4F578E799?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/38C724890060A953AA?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security test engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/12F3523592CC5F47E0?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E114AF982D7F3E4EE5?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Front End Developer (Power Apps)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/581248BAF855B5C489?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior Site Reliability Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1F0084E9DFED794E44?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Gen AI Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A1588586955F446DF8?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security Analyst/Detection Engineer - Active SC Clearance",
+    "link": "https://www.jobserve.com/gb/en/mob/job/52C0B59BF6D5B4FC11?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Software Engineer- Contracting Position",
+    "link": "https://www.jobserve.com/gb/en/mob/job/5E902D57E24D1CF8FD?shid=894D55CE8CC01CE9C56F&page=1",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "SC or DV cleared Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D7B59F195BD29EE601?shid=305C3D375D286518BDA1&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Full Stack Software Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/61F5205819BC55FBBD?shid=305C3D375D286518BDA1&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "MLOps Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/4F56477443A936CF4E?shid=305C3D375D286518BDA1&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Security AI Solution Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/F7E749F1FBD4886DAD?shid=305C3D375D286518BDA1&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Senior Test Automation & Performance Engineer - Up To \u00a3650 Per Day - London",
+    "link": "https://www.jobserve.com/gb/en/mob/job/3C3F10E914188D4D04?shid=305C3D375D286518BDA1&page=2",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "DevOps Engineer - SC Cleared - Remote",
+    "link": "https://www.jobserve.com/gb/en/mob/job/712DAF3B957EF6C71E?shid=305C3D375D286518BDA1&page=2",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "CCaaS Solution Architect - AWS Contact Centre migration",
+    "link": "https://www.jobserve.com/gb/en/mob/job/F0DFC05D08104509BB?shid=305C3D375D286518BDA1&page=2",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Informatica IDMC Data Engineer & PWC",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6D9609FC89C1DD7149?shid=305C3D375D286518BDA1&page=2",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "HPC Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D0CEF886B01950D27E?shid=305C3D375D286518BDA1&page=2",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "Python Engineer - Ai Project",
+    "link": "https://www.jobserve.com/gb/en/mob/job/DE951C25EE0E0CD002?shid=305C3D375D286518BDA1&page=2",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "AWS",
+    "title": "GCP Cloud Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/597012BDE155396441?shid=305C3D375D286518BDA1&page=2",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "Ansible",
+    "title": "Azure Cloud Engineer/Devops- DV Cleared- Milton Keynes/London - \u00a3600 a day",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E620EB21E2E9B1BA7B?shid=0384D6C4858396200695&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "Ansible",
+    "title": "Network Engineer - Hedge Fund - IP, Arista, Automation, Switching, AWS, Ansible/Python - Contract",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6A0AE09C5A29C548E0?shid=0384D6C4858396200695&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "Ansible",
+    "title": "AWS DevOps Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D154A9DE958B307866?shid=0384D6C4858396200695&page=1",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "Ansible",
+    "title": "CyberArk Engineer Secret Management",
+    "link": "https://www.jobserve.com/gb/en/mob/job/930C933A5FF3E2345D?shid=0384D6C4858396200695&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SRE",
+    "title": "Senior Site Reliability Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1F0084E9DFED794E44?shid=A818E12F9974BDBCF14E&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Senior C++ Software Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A26560DDC24E7E65E1?shid=5113D39652C644370357&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Azure Cloud Engineer/Devops- DV Cleared- Milton Keynes/London - \u00a3600 a day",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E620EB21E2E9B1BA7B?shid=5113D39652C644370357&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "2nd Line BAU Engineer - Java/Smoke Test/Shell/SQL/Restful API - SC Cleared - OutsideIR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/299AEEBFF9979B044D?shid=5113D39652C644370357&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Python Developer - Exotics & Structured Products (h/f)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E6B3CD729AB6843516?shid=5113D39652C644370357&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Senior Java Developer - Glasgow - Investment Banking - Data/Spring/Linux/SQL/SDLC/Equity",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6C7FE7C2D8E206B66C?shid=5113D39652C644370357&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Senior C++ Contract Engineer - SQL, Unix/Linux, Oracle, Kafka, Finance, C#, GUI",
+    "link": "https://www.jobserve.com/gb/en/mob/job/F567BFC111ACDED1F3?shid=5113D39652C644370357&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Hedge Fund Trading - Contract Python Developer - Futures, FX, Credit, PnL, Data eng, AWS, Javascript",
+    "link": "https://www.jobserve.com/gb/en/mob/job/292F67E5AD2C2E353F?shid=5113D39652C644370357&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "CyberArk Engineer Secret Management",
+    "link": "https://www.jobserve.com/gb/en/mob/job/930C933A5FF3E2345D?shid=5113D39652C644370357&page=1",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Infrastructure Security Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/692EC03D918F1D52BE?shid=5113D39652C644370357&page=1",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Technical Support - Back End",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8EC73CDBDECC697F0E?shid=5113D39652C644370357&page=1",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Technical Support Frontend Engineer (UX)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/756352646D96E7F46B?shid=5113D39652C644370357&page=1",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "Informatica IDMC Data Engineer & PWC",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6D9609FC89C1DD7149?shid=5113D39652C644370357&page=1",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "Linux",
+    "title": "HPC Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D0CEF886B01950D27E?shid=5113D39652C644370357&page=1",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Senior Project Manager",
+    "link": "https://www.jobserve.com/gb/en/mob/job/42C8CF41F691857FB1?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "1 hour ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Microsoft 365 Technical Consultant",
+    "link": "https://www.jobserve.com/gb/en/mob/job/67E8665B77A1E06D87?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "2 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Data Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/383EEAE4903DA435D6?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "3 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "3rd Line Cloud Support Network Engineer - DV Cleared",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6B688CD5A35D1A78D8?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "3 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SC-Cleared Digital Operating Model Specialist",
+    "link": "https://www.jobserve.com/gb/en/mob/job/B7096C620F1CA2936A?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "3 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Integration Developer- Outside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1D483A61AD3504A163?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Solution Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/991B644EB9CA3A929E?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Content Designer - Digital Public Services (SC Cleared)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/9BF304C85B8E4A0C68?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Service Designer - Digital Public Services (SC Cleared)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/ACEBF4E184D422614D?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "4 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "User Researcher - Digital Public Services (SC Cleared)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/279B8CEC6FDE7218C4?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Principal Security Architect - Azure Cloud",
+    "link": "https://www.jobserve.com/gb/en/mob/job/BCDDAAB5344EF40EC4?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SAP P2P Lead",
+    "link": "https://www.jobserve.com/gb/en/mob/job/90838396648EB1B1B6?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "GCP Security Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1885B83B60EA1E58CF?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "GCP Security Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/340FCCDDEC509AAED2?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "5 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Oracle GL & AH Design Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8491F4DFFCFE022C84?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Oracle Data Integrator (ODI) Specialist",
+    "link": "https://www.jobserve.com/gb/en/mob/job/38D2BE44A099F8A372?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Network Design Specialist - RF Planning Tools - Inside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/FF69698313BAE368D7?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SharePoint SPFx Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/06F96055E6AAC6FE2D?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Azure Cloud Engineer/Devops- DV Cleared- Milton Keynes/London - \u00a3600 a day",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E620EB21E2E9B1BA7B?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "6 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "IT Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/5865E08310DAD54075?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Senior + Associate Security Analysts - Security-cleared",
+    "link": "https://www.jobserve.com/gb/en/mob/job/FF8A2AA997AB9F1A01?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Advisor",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D1CEE4B101D729A212?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "2nd Line BAU Engineer - Java/Smoke Test/Shell/SQL/Restful API - SC Cleared - OutsideIR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/299AEEBFF9979B044D?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "7 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SOC Analyst",
+    "link": "https://www.jobserve.com/gb/en/mob/job/62B004AED2DBC962A4?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Solution Architect",
+    "link": "https://www.jobserve.com/gb/en/mob/job/ACD7E051C4101DF11A?shid=5A89C2DD4817CFADD26C&page=1",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Technical Operative",
+    "link": "https://www.jobserve.com/gb/en/mob/job/498808EFA19925B77E?shid=A0C776270623F5835661&page=2",
+    "date": "8 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/220F3F309EAED6A58D?shid=A0C776270623F5835661&page=2",
+    "date": "9 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SC Cleared VMware Consultant",
+    "link": "https://www.jobserve.com/gb/en/mob/job/1A0E35A13E8B34D895?shid=A0C776270623F5835661&page=2",
+    "date": "9 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "S/4 Hana Programme Manager",
+    "link": "https://www.jobserve.com/gb/en/mob/job/9ACC890BA6D1A8E9FF?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "AWS DevOps Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D154A9DE958B307866?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Cyber Security Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/505C09FDD4F578E799?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Assurance Co - Ordinator",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8F6A8043F73F1D5182?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/38C724890060A953AA?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Graphic Designer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/61C7B492714671646D?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security test engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/12F3523592CC5F47E0?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Senior SQL Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8171BDAD459EACDF9B?shid=A0C776270623F5835661&page=2",
+    "date": "10 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/E114AF982D7F3E4EE5?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Front End Developer (Power Apps)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/581248BAF855B5C489?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "WebMethods Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A17D73175516220818?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Gen AI Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A1588586955F446DF8?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SC Cleared Remote IT Architect - Security, Data, production, TDA, COTS, Integration",
+    "link": "https://www.jobserve.com/gb/en/mob/job/FB40CD98CF2B24F36E?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Security Analyst/Detection Engineer - Active SC Clearance",
+    "link": "https://www.jobserve.com/gb/en/mob/job/52C0B59BF6D5B4FC11?shid=A0C776270623F5835661&page=2",
+    "date": "11 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SC or DV cleared Security Analyst/Detection Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D7B59F195BD29EE601?shid=A0C776270623F5835661&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "IDAM Consultant (SC Cleared)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D6C6E4A8A6C5714338?shid=A0C776270623F5835661&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Full Stack Software Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/61F5205819BC55FBBD?shid=A0C776270623F5835661&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "IFS Cloud SME",
+    "link": "https://www.jobserve.com/gb/en/mob/job/205C05018C8D6495C4?shid=A0C776270623F5835661&page=2",
+    "date": "12 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "DV Cleared Portfolio Manager",
+    "link": "https://www.jobserve.com/gb/en/mob/job/EC0BCF7648260EB646?shid=A0C776270623F5835661&page=2",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "User Researcher - Contract - Inside IR35",
+    "link": "https://www.jobserve.com/gb/en/mob/job/74ED3E49AC96931D80?shid=A0C776270623F5835661&page=2",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "DevOps Engineer - SC Cleared - Remote",
+    "link": "https://www.jobserve.com/gb/en/mob/job/712DAF3B957EF6C71E?shid=A0C776270623F5835661&page=2",
+    "date": "13 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Senior CRM Developer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/924E29A58ED3A8A8FA?shid=A0C776270623F5835661&page=2",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "CRM Technical Lead Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/356A84316DFB690CCC?shid=A0C776270623F5835661&page=3",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Tech Bar/2nd Line Support (macOS & Windows)",
+    "link": "https://www.jobserve.com/gb/en/mob/job/C66E0F47FA6FD63A97?shid=A0C776270623F5835661&page=3",
+    "date": "14 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Strategic Service Design Lead",
+    "link": "https://www.jobserve.com/gb/en/mob/job/8A9E4D39FE3B0C0944?shid=A0C776270623F5835661&page=3",
+    "date": "18 hours ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Informatica IDMC Data Engineer & PWC",
+    "link": "https://www.jobserve.com/gb/en/mob/job/6D9609FC89C1DD7149?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Build Technician",
+    "link": "https://www.jobserve.com/gb/en/mob/job/A3039D051FD0999C95?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "Policy Development and Support Analyst",
+    "link": "https://www.jobserve.com/gb/en/mob/job/58C3BBF64C8E4F2BFD?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "HPC Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/D0CEF886B01950D27E?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "SC Cleared IT Engineer - Kidlington, Oxford - \u00a325-\u00a330 per hour umbrella - CONTRACT",
+    "link": "https://www.jobserve.com/gb/en/mob/job/DDA44FBC0107C095A4?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  },
+  {
+    "summary": "SC Cleared DevOps",
+    "title": "GCP Cloud Engineer",
+    "link": "https://www.jobserve.com/gb/en/mob/job/597012BDE155396441?shid=A0C776270623F5835661&page=3",
+    "date": "1 day ago"
+  }
+];
+        let filteredJobs = [...jobsData];
+
+        const searchBox = document.getElementById('searchBox');
+        const searchFilter = document.getElementById('searchFilter');
+        const sortFilter = document.getElementById('sortFilter');
+        const jobList = document.getElementById('jobList');
+
+        // Initialize
+        function init() {
+            updateStats();
+            populateSearchFilter();
+            renderJobs();
+        }
+
+        // Update statistics
+        function updateStats() {
+            document.getElementById('totalJobs').textContent = jobsData.length;
+            const uniqueSearches = new Set(jobsData.map(job => job.summary)).size;
+            document.getElementById('uniqueSearches').textContent = uniqueSearches;
+            document.getElementById('filteredCount').textContent = filteredJobs.length;
+        }
+
+        // Populate search filter dropdown
+        function populateSearchFilter() {
+            const searches = [...new Set(jobsData.map(job => job.summary))].sort();
+            searchFilter.innerHTML = '<option value="all">All Searches</option>';
+            searches.forEach(search => {
+                const option = document.createElement('option');
+                option.value = search;
+                option.textContent = search;
+                searchFilter.appendChild(option);
+            });
+        }
+
+        // Filter and render
+        function filterAndRender() {
+            let results = [...jobsData];
+
+            // Search filter
+            const searchTerm = searchBox.value.toLowerCase();
+            if (searchTerm) {
+                results = results.filter(job => 
+                    job.title.toLowerCase().includes(searchTerm) ||
+                    job.summary.toLowerCase().includes(searchTerm)
+                );
+            }
+
+            // Search type filter
+            const selectedSearch = searchFilter.value;
+            if (selectedSearch !== 'all') {
+                results = results.filter(job => job.summary === selectedSearch);
+            }
+
+            // Sort
+            const sortType = sortFilter.value;
+            if (sortType === 'newest') {
+                results.sort((a, b) => b.date.localeCompare(a.date));
+            } else if (sortType === 'oldest') {
+                results.sort((a, b) => a.date.localeCompare(b.date));
+            } else if (sortType === 'title') {
+                results.sort((a, b) => a.title.localeCompare(b.title));
+            }
+
+            filteredJobs = results;
+            updateStats();
+            renderJobs();
+        }
+
+        // Render jobs
+        function renderJobs() {
+            if (filteredJobs.length === 0) {
+                jobList.innerHTML = '<div class="no-results">No jobs found matching your criteria</div>';
+                return;
+            }
+
+            jobList.innerHTML = filteredJobs.map(job => `
+                <div class="job-card">
+                    <div class="job-title">${escapeHtml(job.title)}</div>
+                    <div class="job-summary">${escapeHtml(job.summary)}</div>
+                    <div class="job-meta">
+                        <span class="job-date">📅 ${escapeHtml(job.date)}</span>
+                        <a href="${escapeHtml(job.link)}" target="_blank" class="job-link" rel="noopener noreferrer">View Job →</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Reset filters
+        function resetFilters() {
+            searchBox.value = '';
+            searchFilter.value = 'all';
+            sortFilter.value = 'newest';
+            filterAndRender();
+        }
+
+        // Event listeners
+        searchBox.addEventListener('input', filterAndRender);
+        searchFilter.addEventListener('change', filterAndRender);
+        sortFilter.addEventListener('change', filterAndRender);
+
+        // Utility function
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>
