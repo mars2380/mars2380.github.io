@@ -14,10 +14,10 @@ run_test:
 	python3 job_test.py 
 
 git_push: git_pull
-	git pull && \
+	git status && \
+	git remote -v && \
 	git config user.name github-actions && \
 	git config user.email github-actions@github.com && \
-	git remote -v && \
 	git add . && \
 	git commit -m "Update index.html" && \
 	git push
