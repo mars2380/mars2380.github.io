@@ -1,923 +1,821 @@
 {
-  "generated": "2026-05-30T21:15:33.489937",
-  "total_jobs": 153,
+  "generated": "2026-05-30T22:14:05.302392",
+  "total_jobs": 136,
   "data": [
     {
       "summary": "DevOps",
       "title": "SQL Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A934032C2876C5223A?shid=97EF695046ACC9FA786C&page=1",
-      "date": "50 mins ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Senior DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/091CCE95F438A41630?shid=97EF695046ACC9FA786C&page=1",
-      "date": "3 hours ago"
+      "link": "https://www.jobserve.com/gb/en/mob/job/A934032C2876C5223A?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 hour ago"
     },
     {
       "summary": "DevOps",
       "title": "Senior Java Developers - \u00a3530/day (Inside IR35)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "DevOps Engineer (AWS)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Delivery Manager (Oracle HCM)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0B4F4ED63EA7E76184?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Environment and Release Manager - Salesforce, DevOps",
-      "link": "https://www.jobserve.com/gb/en/mob/job/300090BC15BE59DB86?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Environment & Release Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/29AA478A58B09ABD23?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "VCF Platform Automation Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "SC DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Infrastructure Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/ED4EB2E3E0E2835035?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Amazon Connect Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Automation Tester",
-      "link": "https://www.jobserve.com/gb/en/mob/job/39EFF5A7D099681F92?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/39EFF5A7D099681F92?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
-      "title": "DevOps Tech Lead- SC Cleared",
-      "link": "https://www.jobserve.com/gb/en/mob/job/DBF43A67AE2C931AB2?shid=97EF695046ACC9FA786C&page=1",
+      "title": "Quant Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "Delivery Manager (Oracle HCM)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0B4F4ED63EA7E76184?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "Environment and Release Manager - Salesforce, DevOps",
+      "link": "https://www.jobserve.com/gb/en/mob/job/300090BC15BE59DB86?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "Environment & Release Lead",
+      "link": "https://www.jobserve.com/gb/en/mob/job/29AA478A58B09ABD23?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "VCF Platform Automation Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "SC DevOps Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "Infrastructure Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/ED4EB2E3E0E2835035?shid=6C7845EB9180F279F7E6&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "DevOps",
+      "title": "Amazon Connect Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Aspect CTRM Business Analyst - Commodities Trading",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D6703B9107101E0F9F?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D6703B9107101E0F9F?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Lead DevOps Engineer (AI- Focused)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "AWS Devops Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Senior Full Stack Developer (SC Cleared)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "AWS DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Technical Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Power Platform Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C34D5153DA8F4CA8C2?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C34D5153DA8F4CA8C2?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Full Stack Developer - Contract to Permanent (Python, TypeScript, React)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/39BB3C3624039DD90A?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/39BB3C3624039DD90A?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "DevOps",
       "title": "Platform Engineer - 6 Month Contract - Inside IR35 - Wokingham",
-      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=97EF695046ACC9FA786C&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "DevOps",
-      "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=97EF695046ACC9FA786C&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=6C7845EB9180F279F7E6&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Java Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/8BE7F282063FD89B81?shid=1C004D9B690842B5EC76&page=1",
-      "date": "8 hours ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Senior Azure Cloud Platform Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/5736247B0A5A2D1EA2?shid=1C004D9B690842B5EC76&page=1",
-      "date": "18 hours ago"
+      "link": "https://www.jobserve.com/gb/en/mob/job/8BE7F282063FD89B81?shid=0FA9B7C8007211A80505&page=1",
+      "date": "9 hours ago"
     },
     {
       "summary": "AWS",
       "title": "Senior Java Developers - \u00a3530/day (Inside IR35)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "DevOps Engineer (AWS)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=0FA9B7C8007211A80505&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "Java Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0C9F010C058F64D009?shid=0FA9B7C8007211A80505&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "SC DevOps Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Cyber Security Business Analyst",
-      "link": "https://www.jobserve.com/gb/en/mob/job/F2EE72227F90AB1538?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/F2EE72227F90AB1538?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "AI Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/CC1EFD4B9D26585BE0?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/CC1EFD4B9D26585BE0?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Amazon Connect Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "UX/UI Engineer on AI Systems",
-      "link": "https://www.jobserve.com/gb/en/mob/job/878F4353D6B196FB49?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/878F4353D6B196FB49?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Data Product Owner",
-      "link": "https://www.jobserve.com/gb/en/mob/job/DDB2AAFF00AE8B3F98?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/DDB2AAFF00AE8B3F98?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Software Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C0620A18A5886B2C33?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C0620A18A5886B2C33?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "PMO Analyst/PMO Lead - SC Cleared - AWS",
-      "link": "https://www.jobserve.com/gb/en/mob/job/1E7F2566A7BBE8EA6F?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/1E7F2566A7BBE8EA6F?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
-      "title": "Java Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0C9F010C058F64D009?shid=1C004D9B690842B5EC76&page=1",
+      "title": "Technical Lead",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=0FA9B7C8007211A80505&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "Quant Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Salesforce Data Cloud Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A60DB9EC27015CC67F?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/A60DB9EC27015CC67F?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Lead Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D6CF144303853DA004?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D6CF144303853DA004?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Technical Architect - AWS",
-      "link": "https://www.jobserve.com/gb/en/mob/job/861AD0F81BE841779D?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/861AD0F81BE841779D?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Technical Solution Arhcitect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A0BD981B75BB3998C0?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/A0BD981B75BB3998C0?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "AWS Platform Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/3415CE5199DF678291?shid=1C004D9B690842B5EC76&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Senior AWS Data Engineer - SC Cleared",
-      "link": "https://www.jobserve.com/gb/en/mob/job/BF1081D8367ACCBF86?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/3415CE5199DF678291?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Data Product Owner - 6 Month Contract - Inside IR35 - Hybrid in Warwick",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2B78B2EB5E705B203D?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2B78B2EB5E705B203D?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Data Product Owner",
-      "link": "https://www.jobserve.com/gb/en/mob/job/32388A603F1E1B07A2?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/32388A603F1E1B07A2?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "BMC Helix - Tech Lead or Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D1280C83E4D01DA055?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D1280C83E4D01DA055?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Senior Delivery Manager",
-      "link": "https://www.jobserve.com/gb/en/mob/job/AFCF3CD842BB051753?shid=1C004D9B690842B5EC76&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/AFCF3CD842BB051753?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Boomi Integration Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A3711543DAB360B0E9?shid=1C004D9B690842B5EC76&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "SC DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=1C004D9B690842B5EC76&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=5E99D6D9B053808CC715&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Technical Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=5E99D6D9B053808CC715&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/A3711543DAB360B0E9?shid=0FA9B7C8007211A80505&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "AWS DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=5E99D6D9B053808CC715&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
-      "title": "FS React Native Developer - Trading London Outside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/6166C895ECF6D17B53?shid=5E99D6D9B053808CC715&page=2",
+      "title": "Senior Full Stack Developer (SC Cleared)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
-      "title": "Lead DevOps Engineer (AI- Focused)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=5E99D6D9B053808CC715&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Senior AI Engineer - AWS/TypeScript/JavaScript/Python/.NET",
-      "link": "https://www.jobserve.com/gb/en/mob/job/3DFA7CE1F0FA651FD4?shid=5E99D6D9B053808CC715&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Java Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/F579B91D5C372CB3A3?shid=5E99D6D9B053808CC715&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "Network Engineer- WAF",
-      "link": "https://www.jobserve.com/gb/en/mob/job/6F025D42D680505880?shid=5E99D6D9B053808CC715&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "AWS",
-      "title": "AWS Devops Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=5E99D6D9B053808CC715&page=2",
+      "title": "Java Developer - Java, Mulesoft, Springboot",
+      "link": "https://www.jobserve.com/gb/en/mob/job/70E7928FDDC533D1D6?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
       "title": "Java Developer - Java, React, Springboot",
-      "link": "https://www.jobserve.com/gb/en/mob/job/95CA5D64E41408FE1E?shid=5E99D6D9B053808CC715&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/95CA5D64E41408FE1E?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
-      "title": "Java Developer - Java, Mulesoft, Springboot",
-      "link": "https://www.jobserve.com/gb/en/mob/job/70E7928FDDC533D1D6?shid=5E99D6D9B053808CC715&page=2",
+      "title": "Lead DevOps Engineer (AI- Focused)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "AWS",
-      "title": "Senior Full Stack Developer (SC Cleared)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=5E99D6D9B053808CC715&page=2",
+      "title": "Senior AI Engineer - AWS/TypeScript/JavaScript/Python/.NET",
+      "link": "https://www.jobserve.com/gb/en/mob/job/3DFA7CE1F0FA651FD4?shid=ADD36FEA7AAAB3922D36&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "Java Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/F579B91D5C372CB3A3?shid=ADD36FEA7AAAB3922D36&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "Network Engineer- WAF",
+      "link": "https://www.jobserve.com/gb/en/mob/job/6F025D42D680505880?shid=ADD36FEA7AAAB3922D36&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "AWS",
+      "title": "AWS Devops Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=ADD36FEA7AAAB3922D36&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "Ansible",
       "title": "VCF Platform Automation Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=544B0ED3E28B8AFE8F4E&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=A258AB25B16EBC59091F&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "Ansible",
       "title": "AWS DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=544B0ED3E28B8AFE8F4E&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=A258AB25B16EBC59091F&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "Ansible",
       "title": "Java Developer - Java, Mulesoft, Springboot",
-      "link": "https://www.jobserve.com/gb/en/mob/job/70E7928FDDC533D1D6?shid=544B0ED3E28B8AFE8F4E&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/70E7928FDDC533D1D6?shid=A258AB25B16EBC59091F&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "Ansible",
       "title": "Lead DevOps Engineer (AI- Focused)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=544B0ED3E28B8AFE8F4E&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=A258AB25B16EBC59091F&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SRE",
       "title": "AI Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/CC1EFD4B9D26585BE0?shid=5EC64959AF0C80F368F4&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/CC1EFD4B9D26585BE0?shid=9468AD9381E88A690FC9&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SRE",
       "title": "Platform Engineer - 6 Month Contract - Inside IR35 - Wokingham",
-      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=5EC64959AF0C80F368F4&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=9468AD9381E88A690FC9&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "Linux",
-      "title": "Linux Engineer (Red Hat)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/58931DA8A173EB1EA1?shid=7008297761ECAEBD081A&page=1",
-      "date": "2 hours ago"
-    },
-    {
-      "summary": "Linux",
       "title": "PAM Specialist",
-      "link": "https://www.jobserve.com/gb/en/mob/job/7EE5CA7B935B3B031D?shid=7008297761ECAEBD081A&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/7EE5CA7B935B3B031D?shid=B33E5C7457D9ADBFFEBE&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "Linux",
       "title": "Platform Engineer - 6 Month Contract - Inside IR35 - Wokingham",
-      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=7008297761ECAEBD081A&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=B33E5C7457D9ADBFFEBE&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "SQL Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A934032C2876C5223A?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "50 mins ago"
+      "link": "https://www.jobserve.com/gb/en/mob/job/A934032C2876C5223A?shid=C60097416952584105AA&page=1",
+      "date": "1 hour ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Release Manager/Environment & Release Lead - \u00a3450p/d Inside",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2FE67D1EE6C48BB089?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 hour ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "CAMO Quality Manager",
-      "link": "https://www.jobserve.com/gb/en/mob/job/810F18E6B4B70AF013?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 hour ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SOC Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/3AA1D2D3F70F4081C5?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 hour ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "1st Line Support - IT Service Desk Agent",
-      "link": "https://www.jobserve.com/gb/en/mob/job/446B99300D7B1C3AE2?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "16 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Data Center Project Manager - Remote/Hatfield - \u00a3450 per day Umbrella - Contract",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A379FE4CB6892FB632?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "13 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SOC Analyst - DV CLEAR",
-      "link": "https://www.jobserve.com/gb/en/mob/job/92A0571113A0C957EC?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "10 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SC Cleared Data Scientist - Contract",
-      "link": "https://www.jobserve.com/gb/en/mob/job/375EDA8DEAAE80353C?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "5 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Senior DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/091CCE95F438A41630?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "3 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Release Manager",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C47CBEC2914E6C75BB?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "3 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Cyber Security Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/EFDE298266AC675510?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "3 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Cyber Security Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C4678396FDF36D4891?shid=D2E86BD501AE0C5D8A58&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2FE67D1EE6C48BB089?shid=C60097416952584105AA&page=1",
       "date": "2 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Senior Java Developers - \u00a3530/day (Inside IR35)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
+      "title": "CAMO Quality Manager",
+      "link": "https://www.jobserve.com/gb/en/mob/job/810F18E6B4B70AF013?shid=C60097416952584105AA&page=1",
+      "date": "2 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Security Assurance Coordinator (SAC)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/6C82892B053A1CBAEE?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Commercial Manager",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B26E2307ABC6AEFE06?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Senior Buyer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/13CE6BA49A6896D1B1?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Security Assurance Coordinator",
-      "link": "https://www.jobserve.com/gb/en/mob/job/543EAB7DC562A66C24?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Security Architect - SC Cleared - Outside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/7764A5B8AE9E70CE53?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Business Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/331042EB9628DBD910?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SAP S/4HANA CATS Contractor",
-      "link": "https://www.jobserve.com/gb/en/mob/job/BF1A79FE86586CB0D7?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "1 day ago"
+      "title": "SOC Lead",
+      "link": "https://www.jobserve.com/gb/en/mob/job/3AA1D2D3F70F4081C5?shid=C60097416952584105AA&page=1",
+      "date": "2 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "SC Cleared Business Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/22206C169FDA35A0BC?shid=D2E86BD501AE0C5D8A58&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/22206C169FDA35A0BC?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Systems Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/58CDB6952577D70FB8?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "23 hours ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Application Support (Oracle/Unix)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D8C85874DDD6712FFB?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "22 hours ago"
+      "link": "https://www.jobserve.com/gb/en/mob/job/58CDB6952577D70FB8?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "ADA Software Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A6129F23BFEAB2E771?shid=D2E86BD501AE0C5D8A58&page=1",
-      "date": "19 hours ago"
+      "link": "https://www.jobserve.com/gb/en/mob/job/A6129F23BFEAB2E771?shid=C60097416952584105AA&page=1",
+      "date": "20 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Security Assurance Coordinator (SAC)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/83870D798A3D00ECE4?shid=D2E86BD501AE0C5D8A58&page=1",
+      "link": "https://www.jobserve.com/gb/en/mob/job/83870D798A3D00ECE4?shid=C60097416952584105AA&page=1",
+      "date": "18 hours ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "1st Line Support - IT Service Desk Agent",
+      "link": "https://www.jobserve.com/gb/en/mob/job/446B99300D7B1C3AE2?shid=C60097416952584105AA&page=1",
       "date": "17 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "DevOps Engineer (AWS)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
+      "title": "Data Center Project Manager - Remote/Hatfield - \u00a3450 per day Umbrella - Contract",
+      "link": "https://www.jobserve.com/gb/en/mob/job/A379FE4CB6892FB632?shid=C60097416952584105AA&page=1",
+      "date": "14 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Automation Tester",
-      "link": "https://www.jobserve.com/gb/en/mob/job/39EFF5A7D099681F92?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "PMO Analyst/PMO Lead - SC Cleared - AWS",
-      "link": "https://www.jobserve.com/gb/en/mob/job/1E7F2566A7BBE8EA6F?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "PAM Specialist",
-      "link": "https://www.jobserve.com/gb/en/mob/job/7EE5CA7B935B3B031D?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SC DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Infrastructure Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/ED4EB2E3E0E2835035?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Sas Viya Architect , Fully remote \u00a3600pd Inside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C3478F7B3279FA63CD?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Amazon Connect Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Senior Modern Workplace Engineer (outside IR35)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9CD26A9C89A8C33027?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Software Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C0620A18A5886B2C33?shid=AEE699298F5CF0F388B5&page=2",
-      "date": "1 day ago"
+      "title": "Release Manager",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C47CBEC2914E6C75BB?shid=C60097416952584105AA&page=1",
+      "date": "4 hours ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Cyber Security Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/292A8293DC4623B33C?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C4678396FDF36D4891?shid=C60097416952584105AA&page=1",
+      "date": "3 hours ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Cyber Security Architect",
+      "link": "https://www.jobserve.com/gb/en/mob/job/292A8293DC4623B33C?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Oracle FDI/FAIDP Data Analytics Architect (SC Cleared/Eligible)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2FEDCA304AAD8BECFA?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2FEDCA304AAD8BECFA?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "EUC Rollout Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/105D06ED6DD7675645?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "PAM Specialist",
+      "link": "https://www.jobserve.com/gb/en/mob/job/7EE5CA7B935B3B031D?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Senior AWS Data Engineer - SC Cleared",
-      "link": "https://www.jobserve.com/gb/en/mob/job/BF1081D8367ACCBF86?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "PMO Analyst/PMO Lead - SC Cleared - AWS",
+      "link": "https://www.jobserve.com/gb/en/mob/job/1E7F2566A7BBE8EA6F?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Environment and Release Manager - Salesforce, DevOps",
-      "link": "https://www.jobserve.com/gb/en/mob/job/300090BC15BE59DB86?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "Automation Tester",
+      "link": "https://www.jobserve.com/gb/en/mob/job/39EFF5A7D099681F92?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Environment & Release Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/29AA478A58B09ABD23?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "DevOps Engineer (AWS)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2265CACF3F8B332EE9?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "SAP Plant Maintenance Consultant",
-      "link": "https://www.jobserve.com/gb/en/mob/job/AB4297247244C2AB8D?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "Senior Java Developers - \u00a3530/day (Inside IR35)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/19BD6A728CC14317E8?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Data Product Owner",
-      "link": "https://www.jobserve.com/gb/en/mob/job/32388A603F1E1B07A2?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "Security Assurance Coordinator (SAC)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/6C82892B053A1CBAEE?shid=C60097416952584105AA&page=1",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "DBA (Oracle/SQL Server)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B4386A7AC10A4B35E8?shid=AEE699298F5CF0F388B5&page=2",
+      "title": "Commercial Manager",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B26E2307ABC6AEFE06?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Senior Buyer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/13CE6BA49A6896D1B1?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Security Assurance Coordinator",
+      "link": "https://www.jobserve.com/gb/en/mob/job/543EAB7DC562A66C24?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Business Architect",
+      "link": "https://www.jobserve.com/gb/en/mob/job/331042EB9628DBD910?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "SAP S/4HANA CATS Contractor",
+      "link": "https://www.jobserve.com/gb/en/mob/job/BF1A79FE86586CB0D7?shid=C60097416952584105AA&page=1",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Software Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C0620A18A5886B2C33?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Senior Modern Workplace Engineer (outside IR35)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9CD26A9C89A8C33027?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Amazon Connect Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/82AFB7F8637F1ADC42?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Sas Viya Architect , Fully remote \u00a3600pd Inside IR35",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C3478F7B3279FA63CD?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "VCF Platform Automation Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/14E2E4E2B164C5B51D?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Integrated Planning & Change Lead - SC Cleared - Outside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/75DED0C9B02E99D22A?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/75DED0C9B02E99D22A?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Insights & Reporting Lead - SC Cleared - Outside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D1B06DC670A69859C8?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D1B06DC670A69859C8?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "BMC Helix - Tech Lead or Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D1280C83E4D01DA055?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D1280C83E4D01DA055?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Portfolio Support Officer - SC Cleared - Outside IR35",
-      "link": "https://www.jobserve.com/gb/en/mob/job/FFB0AC119244CD824F?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/FFB0AC119244CD824F?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Product Owner IDAM",
-      "link": "https://www.jobserve.com/gb/en/mob/job/69687CDB5C10BD78DD?shid=AEE699298F5CF0F388B5&page=2",
+      "link": "https://www.jobserve.com/gb/en/mob/job/69687CDB5C10BD78DD?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Delivery Manager (Oracle HCM)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0B4F4ED63EA7E76184?shid=AEE699298F5CF0F388B5&page=3",
+      "title": "SC DevOps Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9BD4F3EA522AA6CDC1?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Senior Business Analyst (SC Eligible)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/F2C540ADE797114E0E?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Dependency & Integration Analyst (SC Cleared)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B7851F6946333A3A39?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Salesforce Data Cloud Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A60DB9EC27015CC67F?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Power Platform Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C34D5153DA8F4CA8C2?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Product Owner - Sailpoint/IDAM, payments, Jira, Confluence, SC Clearance essential",
-      "link": "https://www.jobserve.com/gb/en/mob/job/755B145AC0B345D5BE?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Full Stack Developer - Contract to Permanent (Python, TypeScript, React)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/39BB3C3624039DD90A?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Security Assurance Architect - MOD DV - IR35 TBC",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D995ED19606BC8C2AC?shid=AEE699298F5CF0F388B5&page=3",
+      "title": "Infrastructure Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/ED4EB2E3E0E2835035?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "React Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/E7954DFB2EE7300026?shid=AEE699298F5CF0F388B5&page=3",
+      "link": "https://www.jobserve.com/gb/en/mob/job/E7954DFB2EE7300026?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Platform Engineer - 6 Month Contract - Inside IR35 - Wokingham",
-      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=AEE699298F5CF0F388B5&page=3",
+      "link": "https://www.jobserve.com/gb/en/mob/job/236FC464367BBD1B7F?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Lead Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D6CF144303853DA004?shid=AEE699298F5CF0F388B5&page=3",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D6CF144303853DA004?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Junior Project Manager - NPPV3 Clearance",
-      "link": "https://www.jobserve.com/gb/en/mob/job/08BDC24195875B8F33?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "NPPV3 Cleared Junior Service Management Consultant",
-      "link": "https://www.jobserve.com/gb/en/mob/job/876DD270A2ADB3729E?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "AWS Devops Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Interim Security Advisor",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0680120C9BE64B9EBD?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SC Data Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/A20C88261FC6C974F5?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Product Owner - Sailpoint/Access Management - SC Cleared",
-      "link": "https://www.jobserve.com/gb/en/mob/job/13AF3CECA6DB55264B?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Project Manager (Urgent Capability Requirements)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/991D45E970C3A037A3?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Senior Full Stack Developer (SC Cleared)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Operational Lead - PKI Certificate Services",
-      "link": "https://www.jobserve.com/gb/en/mob/job/B39099C41A2A4CFE33?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "AWS DevOps Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=AEE699298F5CF0F388B5&page=3",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Technical Lead",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=AEE699298F5CF0F388B5&page=3",
+      "title": "Dependency & Integration Analyst (SC Cleared)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B7851F6946333A3A39?shid=D1F474961D714F3526AB&page=2",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Quant Developer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=AEE699298F5CF0F388B5&page=3",
+      "link": "https://www.jobserve.com/gb/en/mob/job/9172E001EC72496A0B?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Senior Business Analyst (SC Eligible)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/F2C540ADE797114E0E?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Delivery Manager (Oracle HCM)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0B4F4ED63EA7E76184?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "EUC Rollout Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/105D06ED6DD7675645?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Environment and Release Manager - Salesforce, DevOps",
+      "link": "https://www.jobserve.com/gb/en/mob/job/300090BC15BE59DB86?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Environment & Release Lead",
+      "link": "https://www.jobserve.com/gb/en/mob/job/29AA478A58B09ABD23?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "SAP Plant Maintenance Consultant",
+      "link": "https://www.jobserve.com/gb/en/mob/job/AB4297247244C2AB8D?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Data Product Owner",
+      "link": "https://www.jobserve.com/gb/en/mob/job/32388A603F1E1B07A2?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "DBA (Oracle/SQL Server)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B4386A7AC10A4B35E8?shid=D1F474961D714F3526AB&page=2",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Security Assurance Architect - MOD DV - IR35 TBC",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D995ED19606BC8C2AC?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Full Stack Developer - Contract to Permanent (Python, TypeScript, React)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/39BB3C3624039DD90A?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Product Owner - Sailpoint/IDAM, payments, Jira, Confluence, SC Clearance essential",
+      "link": "https://www.jobserve.com/gb/en/mob/job/755B145AC0B345D5BE?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Power Platform Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C34D5153DA8F4CA8C2?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Project Manager (Urgent Capability Requirements)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/991D45E970C3A037A3?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Senior Full Stack Developer (SC Cleared)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B679C19897C5042245?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Operational Lead - PKI Certificate Services",
+      "link": "https://www.jobserve.com/gb/en/mob/job/B39099C41A2A4CFE33?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "AWS DevOps Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/627A72DE8FF4ABD496?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Technical Lead",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0079DF3C9945627EBA?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Quant Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/C7EB0010029F59DA8D?shid=D1F474961D714F3526AB&page=3",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "Project Support Officer - SC Cleared Government Programme",
-      "link": "https://www.jobserve.com/gb/en/mob/job/34E89EAE816A878CB4?shid=AEE699298F5CF0F388B5&page=3",
+      "link": "https://www.jobserve.com/gb/en/mob/job/34E89EAE816A878CB4?shid=D1F474961D714F3526AB&page=3",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
-      "title": "Technical Architect",
-      "link": "https://www.jobserve.com/gb/en/mob/job/326EDECEAFE0AF2C2D?shid=AEE699298F5CF0F388B5&page=4",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Lead DevOps Engineer (AI- Focused)",
-      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=AEE699298F5CF0F388B5&page=4",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "SAP Basis Support Engineer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/70C05B432954DEDD5D?shid=AEE699298F5CF0F388B5&page=4",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Aspect CTRM Business Analyst - Commodities Trading",
-      "link": "https://www.jobserve.com/gb/en/mob/job/D6703B9107101E0F9F?shid=AEE699298F5CF0F388B5&page=4",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "Senior Test Specialist",
-      "link": "https://www.jobserve.com/gb/en/mob/job/CBC5E5B712D78148EF?shid=AEE699298F5CF0F388B5&page=4",
-      "date": "1 day ago"
-    },
-    {
-      "summary": "SC Cleared DevOps",
-      "title": "DevOps Tech Lead- SC Cleared",
-      "link": "https://www.jobserve.com/gb/en/mob/job/DBF43A67AE2C931AB2?shid=AEE699298F5CF0F388B5&page=4",
+      "title": "Salesforce Data Cloud Developer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/A60DB9EC27015CC67F?shid=D1F474961D714F3526AB&page=3",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "SC Cleared User Researcher - Contract",
-      "link": "https://www.jobserve.com/gb/en/mob/job/0FE4DA7B229C33C6CE?shid=AEE699298F5CF0F388B5&page=4",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0FE4DA7B229C33C6CE?shid=D1F474961D714F3526AB&page=3",
       "date": "1 day ago"
     },
     {
       "summary": "SC Cleared DevOps",
       "title": "SC Cleared SAP Trainer",
-      "link": "https://www.jobserve.com/gb/en/mob/job/69729A23FCCEDBFD4F?shid=AEE699298F5CF0F388B5&page=4",
+      "link": "https://www.jobserve.com/gb/en/mob/job/69729A23FCCEDBFD4F?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "SAP Basis Support Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/70C05B432954DEDD5D?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Aspect CTRM Business Analyst - Commodities Trading",
+      "link": "https://www.jobserve.com/gb/en/mob/job/D6703B9107101E0F9F?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Lead DevOps Engineer (AI- Focused)",
+      "link": "https://www.jobserve.com/gb/en/mob/job/2472A4828114054883?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Junior Project Manager - NPPV3 Clearance",
+      "link": "https://www.jobserve.com/gb/en/mob/job/08BDC24195875B8F33?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "NPPV3 Cleared Junior Service Management Consultant",
+      "link": "https://www.jobserve.com/gb/en/mob/job/876DD270A2ADB3729E?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "AWS Devops Engineer",
+      "link": "https://www.jobserve.com/gb/en/mob/job/8E7AED59AF6658C76F?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Interim Security Advisor",
+      "link": "https://www.jobserve.com/gb/en/mob/job/0680120C9BE64B9EBD?shid=D1F474961D714F3526AB&page=3",
+      "date": "1 day ago"
+    },
+    {
+      "summary": "SC Cleared DevOps",
+      "title": "Product Owner - Sailpoint/Access Management - SC Cleared",
+      "link": "https://www.jobserve.com/gb/en/mob/job/13AF3CECA6DB55264B?shid=D1F474961D714F3526AB&page=3",
       "date": "1 day ago"
     }
   ]
