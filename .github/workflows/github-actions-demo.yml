@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - index.html
-      - jobs_data.json
+    # paths-ignore:
+    #   - index.html
+    #   - jobs_data.json
   schedule:
     - cron: "*/20 7-22 * * *"
 
@@ -42,8 +42,8 @@ jobs:
 
       - name: List files in the repository
         run: |
-          rm index.html  || true
-          rm jobs_data.json || true
+          rm -v index.html  || true
+          rm -v jobs_data.json || true
           ls ${{ github.workspace }}
 
       - name: Check Python version
