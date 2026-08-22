@@ -6,12 +6,13 @@ bootstrap:
 	pip install -r requirements.txt
 
 run:
-	bash ./new_env/bin/activate || true
+	. ./new_env/bin/activate && \
 	python3 jobs_v2.1.py
 # python3 jobs_v2.py > job.txt
 
 run_test:
-	python3 job_test.py 
+# 	python3 job_test.py
+	python3 jobs.py 
 
 git_push: git_pull
 	@git status

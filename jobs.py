@@ -10,26 +10,36 @@ URL4 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=AA6A0
 URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=7A69F1D9B674924A"
 
 def page (URL):
-    page = requests.get(URL, verify=False)
-    soup = BeautifulSoup(page.content, "html.parser")
+    response = requests.get(URL, verify=False, timeout=20)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.content, "html.parser")
     results = soup.find(id="cnt")
+
+    if results is None:
+        return [URL]
 
     URLS = [URL]
 
-    pages_elements = results.find_all("span", class_="pages")    
-    for pages_element in pages_elements:     
+    pages_elements = results.find_all("span", class_="pages")
+    for pages_element in pages_elements:
         link_elements = pages_element.find_all("a")
         for link_element in link_elements:
-            link=link_element.get('href')
-            URLS.append("https://www.jobserve.com" + link)
+            link = link_element.get('href')
+            if not link:
+                continue
+            if link.startswith("http"):
+                URLS.append(link)
+            else:
+                URLS.append("https://www.jobserve.com" + link)
 
-    pages = set(URLS)
-    pages = sorted(pages, reverse=True)
+    pages = sorted(set(URLS), reverse=True)
+    if not pages:
+        return [URL]
+
     page0 = [pages[0]]
     pages.pop(0)
     page1 = sorted(pages, reverse=False)
     pageslist = page0 + page1
-    # print (pageslist)
     return pageslist
 
 def head ():
@@ -78,14 +88,15 @@ def search (urllist):
     now = datetime.datetime.now()
 
     for i in URLS:
-        # print(i)
-        request = requests.get(i, verify=False)
+        request = requests.get(i, verify=False, timeout=20)
         soup = BeautifulSoup(request.content, "html.parser")
         results = soup.find(id="cnt")
-        # print(results.prettify())
+
+        if results is None:
+            continue
 
         summary_element = results.find("span", class_="searchval")
-        summary = summary_element.text
+        summary = summary_element.text.strip() if summary_element else "N/A"
 
         print('<tr><th>' + summary + ' - ' + i + '</th><th>' + str(now.strftime("%a %x %X")) + '</th></tr>')
 
@@ -95,11 +106,18 @@ def search (urllist):
             link_element = job_element.find("a")
             date_element = job_element.find("span", class_="etime")
 
+            if title_element is None or link_element is None or date_element is None:
+                continue
+
+            href = link_element.get('href')
+            if not href:
+                continue
+
+            link = href if href.startswith("http") else "https://www.jobserve.com" + href
             title = title_element.text.strip()
-            link = "https://www.jobserve.com" + link_element.get('href')
             date = date_element.text.strip()
 
-            print('<tr><td>' + '<a href="' + link + 'target="_blank" rel="noopener noreferrer">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
+            print('<tr><td>' + '<a href="' + link + '" target="_blank" rel="noopener noreferrer">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>')
 
             # jobdetails = jobinfos(link)
             # print('<tr><td>' + '<a href="' + link + '">' + title + '</a>' + '</td> <td> ' + date + '</td></tr>' + '</td> <td> ' + jobdetails + '</td></tr>')
