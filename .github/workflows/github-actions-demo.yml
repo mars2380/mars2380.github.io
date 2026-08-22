@@ -46,7 +46,8 @@ jobs:
 
       - name: Run Python Job
         run: |
-          python jobs.py | tee index.html
+          # python jobs.py | tee index.html
+          python3 jobserve_scraper.py --output-html index.html
 
       - name: Commit & Push changes
         run: |

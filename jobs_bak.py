@@ -2,14 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
-REQUEST_HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-GB,en;q=0.9",
-    "Cache-Control": "no-cache",
-    "Pragma": "no-cache",
-}
-
 URL0 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=78A9B33B42D9BA8B"
 URL1 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DC2CD21F55D1F339"
 URL2 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=4D8DA2CE347175ED"
@@ -17,19 +9,14 @@ URL3 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DE3E4
 URL4 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=AA6A02598408858D"
 URL5 = "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=7A69F1D9B674924A"
 
-
-def fetch(url, session=None):
-    http = session or requests
-    return http.get(url, headers=REQUEST_HEADERS, verify=False, timeout=30)
-
 def page (URL):
-    page = fetch(URL)
+    page = requests.get(URL, verify=False)
     soup = BeautifulSoup(page.content, "html.parser")
     results = soup.find(id="cnt")
 
     URLS = [URL]
 
-    pages_elements = results.find_all(class_="infinpage odd")
+    pages_elements = results.find_all("span", class_="pages")    
     for pages_element in pages_elements:     
         link_elements = pages_element.find_all("a")
         for link_element in link_elements:
@@ -42,7 +29,7 @@ def page (URL):
     pages.pop(0)
     page1 = sorted(pages, reverse=False)
     pageslist = page0 + page1
-    print (pageslist)
+    # print (pageslist)
     return pageslist
 
 def head ():
@@ -90,10 +77,9 @@ def search (urllist):
 
     now = datetime.datetime.now()
 
-    session = requests.Session()
     for i in URLS:
         # print(i)
-        request = fetch(i, session=session)
+        request = requests.get(i, verify=False)
         soup = BeautifulSoup(request.content, "html.parser")
         results = soup.find(id="cnt")
         # print(results.prettify())
@@ -128,7 +114,7 @@ def search (urllist):
 
 def jobinfos (link):
 
-    request = fetch(link)
+    request = requests.get(link, verify=False)
     soup = BeautifulSoup(request.content, "html.parser")
     results = soup.find(id="cnt")
 
@@ -149,7 +135,7 @@ def button ():
 def main():
 
     urllists = [ URL0, URL1, URL2, URL3, URL4, URL5]
-    # urllists = [ URL0 ]
+    # urllists = [ URL5 ]
     head ()
     for urllist in urllists:
         search(urllist)
