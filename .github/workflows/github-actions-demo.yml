@@ -4,8 +4,15 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - index.html
+      - jobs_data.json
   schedule:
     - cron: "*/20 7-22 * * *"
+
+concurrency:
+  group: jobserve-main-updater
+  cancel-in-progress: true
     
 permissions:
   contents: write
@@ -70,14 +77,14 @@ jobs:
           echo "Push"
           git remote set-url --push origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
-          # Handle concurrent updates to main by rebasing then retrying push.
+          # Handle concurrent updates to main without rebase conflicts on generated files.
           for i in 1 2 3; do
-            git fetch origin main
-            git rebase origin/main
             if git push origin HEAD:main; then
               echo "Push succeeded on attempt ${i}"
               break
             fi
+            git fetch origin main
+            git merge --no-edit -X ours origin/main
             if [ "$i" -eq 3 ]; then
               echo "Push failed after 3 attempts"
               exit 1
