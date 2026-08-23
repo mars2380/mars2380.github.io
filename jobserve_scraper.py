@@ -7,12 +7,15 @@ Output columns:
 - salary
 - location
 - time
+- employment business
+- contact
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import ssl
 import time
 from dataclasses import dataclass, asdict
@@ -51,6 +54,8 @@ class Job:
     job_url: str
     location: str
     time: str
+    employment_business: str = ""
+    contact: str = ""
 
 
 class JobServeParser(HTMLParser):
@@ -244,6 +249,93 @@ def extract_results_pages(html: str, source_url: str) -> List[str]:
     return filtered
 
 
+def _html_to_lines(html: str) -> List[str]:
+    cleaned = re.sub(r"<script\\b[^>]*>.*?</script>", " ", html, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r"<style\\b[^>]*>.*?</style>", " ", cleaned, flags=re.IGNORECASE | re.DOTALL)
+    cleaned = re.sub(r"<[^>]+>", "\n", cleaned)
+    cleaned = re.sub(r"\r", "\n", cleaned)
+    cleaned = re.sub(r"\n+", "\n", cleaned)
+    return [line.strip() for line in cleaned.split("\n") if line.strip()]
+
+
+def _extract_jobinfo_lines(html: str) -> List[str]:
+    # Prefer parsing inside the jobinfo section from job detail pages.
+    blocks = re.findall(
+        r"<div[^>]*class=[\"'][^\"']*\bjobinfo\b[^\"']*[\"'][^>]*>(.*?)</div>",
+        html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if not blocks:
+        return []
+
+    return _html_to_lines("\n".join(blocks))
+
+
+def _extract_labeled_value(lines: List[str], labels: List[str]) -> str:
+    joined = "(?:" + "|".join(labels) + ")"
+    label_only_pattern = re.compile(r"^" + joined + r"\s*$", re.IGNORECASE)
+    label_with_value_pattern = re.compile(r"^" + joined + r"\s*[:\-]\s*(.+)$", re.IGNORECASE)
+
+    for idx, line in enumerate(lines):
+        same_line_match = label_with_value_pattern.match(line)
+        if same_line_match:
+            same_line_value = same_line_match.group(1).strip()
+            if same_line_value:
+                return same_line_value
+
+        if not label_only_pattern.match(line):
+            continue
+
+        for next_idx in range(idx + 1, min(idx + 6, len(lines))):
+            candidate = lines[next_idx].strip()
+            if not candidate:
+                continue
+            if label_only_pattern.match(candidate) or label_with_value_pattern.match(candidate):
+                break
+            # If next item looks like a field heading (eg "Telephone:") skip it.
+            if candidate.endswith(":"):
+                break
+            return candidate
+
+    return ""
+
+
+def extract_job_detail_fields(html: str) -> tuple[str, str]:
+    # First try values within the jobinfo class section, then fallback to full page text.
+    jobinfo_lines = _extract_jobinfo_lines(html)
+    lines = jobinfo_lines if jobinfo_lines else _html_to_lines(html)
+
+    employment_business = _extract_labeled_value(lines, [r"Employment\s+Business", r"Employment\s+Agency"])
+    contact = _extract_labeled_value(lines, [r"Contact", r"Contact\s+Name"])
+
+    if not employment_business or not contact:
+        full_lines = _html_to_lines(html)
+        if not employment_business:
+            employment_business = _extract_labeled_value(full_lines, [r"Employment\s+Business", r"Employment\s+Agency"])
+        if not contact:
+            contact = _extract_labeled_value(full_lines, [r"Contact", r"Contact\s+Name"])
+
+    return employment_business, contact
+
+
+def enrich_jobs_with_details(jobs: List[Job], timeout: int, insecure: bool) -> None:
+    detail_cache: dict[str, tuple[str, str]] = {}
+
+    for job in jobs:
+        if job.job_url in detail_cache:
+            employment_business, contact = detail_cache[job.job_url]
+        else:
+            try:
+                detail_html = fetch_html(job.job_url, timeout=timeout, insecure=insecure)
+                employment_business, contact = extract_job_detail_fields(detail_html)
+            except Exception:
+                employment_business, contact = "", ""
+            detail_cache[job.job_url] = (employment_business, contact)
+
+        job.employment_business = employment_business
+        job.contact = contact
+
+
 def scrape_search_with_pagination(
     search_url: str,
     timeout: int,
@@ -263,6 +355,7 @@ def scrape_search_with_pagination(
 
         html = fetch_html(page_url, timeout=timeout, insecure=insecure)
         page_jobs = parse_jobs(html, source_url=page_url)
+        enrich_jobs_with_details(page_jobs, timeout=timeout, insecure=insecure)
         jobs.extend(page_jobs)
 
         discovered_pages = extract_results_pages(html, source_url=search_url)
@@ -302,6 +395,8 @@ def write_html(path: Path, jobs: List[Job]) -> None:
             f"<td>{escape(job.salary)}</td>"
             f"<td>{escape(job.location)}</td>"
             f"<td>{escape(job.time)}</td>"
+            f"<td>{escape(job.employment_business)}</td>"
+            f"<td>{escape(job.contact)}</td>"
             "</tr>"
         )
 
@@ -321,7 +416,7 @@ def write_html(path: Path, jobs: List[Job]) -> None:
     h1 {{ margin: 0 0 12px; }}
     p {{ margin: 0 0 18px; }}
     .table-wrap {{ overflow-x: auto; background: #fff; border: 1px solid #ddd; }}
-    table {{ border-collapse: collapse; width: 100%; min-width: 1080px; }}
+    table {{ border-collapse: collapse; width: 100%; min-width: 1320px; }}
     th, td {{ border: 1px solid #ddd; padding: 10px; text-align: left; vertical-align: top; }}
     th {{ background: #154c79; color: #fff; position: sticky; top: 0; }}
     tr:nth-child(even) {{ background: #fafafa; }}
@@ -341,6 +436,8 @@ def write_html(path: Path, jobs: List[Job]) -> None:
           <th>salary</th>
           <th>location</th>
           <th>time</th>
+                    <th>employment business</th>
+                    <th>contact</th>
         </tr>
       </thead>
       <tbody>
@@ -400,7 +497,9 @@ def main() -> int:
     if args.input_file:
         file_path = Path(args.input_file)
         html = file_path.read_text(encoding="utf-8", errors="replace")
-        all_jobs.extend(parse_jobs(html, "https://www.jobserve.com"))
+        parsed_jobs = parse_jobs(html, "https://www.jobserve.com")
+        enrich_jobs_with_details(parsed_jobs, timeout=args.timeout, insecure=args.insecure)
+        all_jobs.extend(parsed_jobs)
     else:
         for url in URLS:
             print(f"Fetching: {url}")

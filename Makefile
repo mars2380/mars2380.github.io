@@ -12,7 +12,7 @@ run:
 
 run_test:
 # 	python3 job_test.py
-	python3 jobs.py 
+	python3 jobserve_scraper.py --output-html index.html
 
 git_push: git_pull
 	@git status
