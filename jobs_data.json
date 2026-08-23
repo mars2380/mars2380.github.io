@@ -1,5 +1,372 @@
-{
-  "generated": "2026-08-23T14:41:34.241660",
-  "total_jobs": 0,
-  "data": []
-}
+[
+  {
+    "summary": "DevOps | London",
+    "position": "Integration Architect - Java, AWS, FS - OutsideIR35",
+    "salary": "\u00a3550 - \u00a3600 per day + Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7460C2FA48292BC2C5?shid=4DC8243BC353F21EB71E&page=1",
+    "location": "City of London",
+    "time": "1 hour ago",
+    "employment_business": "Sanderson Recruitment Plc",
+    "contact": "Khalid Razouki"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "650.00 Daily - 800.00 Daily + Inside IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CFECC48DBB1314A584?shid=4DC8243BC353F21EB71E&page=1",
+    "location": "London",
+    "time": "10 hours ago",
+    "employment_business": "VIQU IT Recruitment",
+    "contact": "VIQU IT Recruitment"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Windchill Administrator",
+    "salary": "\u00a3340",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D17D52F2D522FA51C4?shid=4DC8243BC353F21EB71E&page=1",
+    "location": "cheltenham",
+    "time": "1 day ago",
+    "employment_business": "",
+    "contact": "Joy Bhowmik"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Optimizely Commerce Technical Consultant/Architect",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/E36701257B9E1EAE68?shid=4DC8243BC353F21EB71E&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "Lorien",
+    "contact": "Lorien"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Integration Architect - Java, AWS, FS - OutsideIR35",
+    "salary": "\u00a3550 - \u00a3600 per day + Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7460C2FA48292BC2C5?shid=0674D330FF64B9A260C5&page=1",
+    "location": "City of London",
+    "time": "1 hour ago",
+    "employment_business": "Sanderson Recruitment Plc",
+    "contact": "Khalid Razouki"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Security Consultant - CrowdStrike Assurance",
+    "salary": "Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/FD988A01693703156A?shid=0674D330FF64B9A260C5&page=1",
+    "location": "Hybrid-WFH/London 2-3 days a week",
+    "time": "1 hour ago",
+    "employment_business": "Barclay Simpson Recruitment",
+    "contact": "Jeff Mayger"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Test Automation (DV Cleared)",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4D8FD8E2098C499734?shid=0674D330FF64B9A260C5&page=1",
+    "location": "Farnborough, Hampshire",
+    "time": "3 hours ago",
+    "employment_business": "Copello",
+    "contact": "Copello"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Azure SRE",
+    "salary": "Not Specified",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/050158E0711279C6B5?shid=0674D330FF64B9A260C5&page=1",
+    "location": "Reading, GB-ENG",
+    "time": "6 hours ago",
+    "employment_business": "TEKsystems",
+    "contact": "Robyn Sutherland"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Cyber Security Analyst - Government, SEIM, Splunk, AWS, M365, Defence, SC Clearance, Hybrid, \u00a3700",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/323209317A7DE5F320?shid=0674D330FF64B9A260C5&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "Bangura Solutions",
+    "contact": "Marcus Wallace"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Associate Security Analyst",
+    "salary": "650.00 Daily - 700.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A9FBF18FB95EEDC16E?shid=0674D330FF64B9A260C5&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "NonStop Consulting Ltd",
+    "contact": "NonStop Consulting Ltd"
+  },
+  {
+    "summary": "SRE | London",
+    "position": "Azure SRE",
+    "salary": "Not Specified",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/050158E0711279C6B5?shid=2EDED118D5E69188A28D&page=1",
+    "location": "Reading, GB-ENG",
+    "time": "6 hours ago",
+    "employment_business": "TEKsystems",
+    "contact": "Robyn Sutherland"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Veeam Consultant",
+    "salary": "350.00 Daily - 350.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/881CA5F9E08F181B3F?shid=BE4F108884E70199034D&page=1",
+    "location": "London",
+    "time": "6 hours ago",
+    "employment_business": "Solutions Through Knowledge",
+    "contact": "Solutions Through Knowledge"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "GMP Application & Analytics Manager - Salesforce & Power BI",
+    "salary": "+ Competitive Inside IR35 Day Rate GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F9542D32E9A1000252?shid=5889306EC2C767DF232B&page=1",
+    "location": "Milton Keynes, Buckinghamshire",
+    "time": "34 mins ago",
+    "employment_business": "SUMMER-BROWNING ASSOCIATES LIMITED",
+    "contact": "SUMMER-BROWNING ASSOCIATES LIMITED"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Integration Architect - Java, AWS, FS - OutsideIR35",
+    "salary": "\u00a3550 - \u00a3600 per day + Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7460C2FA48292BC2C5?shid=5889306EC2C767DF232B&page=1",
+    "location": "City of London",
+    "time": "1 hour ago",
+    "employment_business": "Sanderson Recruitment Plc",
+    "contact": "Khalid Razouki"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Principal/Lead Hardware Engineer",
+    "salary": "70.00 Hourly - 95.44 Hourly + None GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/72EAE555023DD8F945?shid=5889306EC2C767DF232B&page=1",
+    "location": "Luton, Bedfordshire",
+    "time": "2 hours ago",
+    "employment_business": "Morson Edge",
+    "contact": "Morson Edge"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "PAM Architect",
+    "salary": "500 - 550 a day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/ECD7F0814002F9A0AB?shid=5889306EC2C767DF232B&page=1",
+    "location": "Corsham, Wiltshire",
+    "time": "3 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Test Automation (DV Cleared)",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4D8FD8E2098C499734?shid=5889306EC2C767DF232B&page=1",
+    "location": "Farnborough, Hampshire",
+    "time": "3 hours ago",
+    "employment_business": "Copello",
+    "contact": "Copello"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Lead Hardware Engineer",
+    "salary": "65.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C1C6FCA1C59DFD38A3?shid=5889306EC2C767DF232B&page=1",
+    "location": "Bedfordshire",
+    "time": "4 hours ago",
+    "employment_business": "WINSEARCH",
+    "contact": "Winsearch"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Capacity Manager - SC Cleared - Remote - Outside IR35",
+    "salary": "\u00a3500 - \u00a3600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D2DFBB748254266986?shid=5889306EC2C767DF232B&page=1",
+    "location": "England",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Problem Manager - SC cleared - Remote - Outside IR35",
+    "salary": "\u00a3500 - \u00a3600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/716D5F8BA10CF2BA62?shid=5889306EC2C767DF232B&page=1",
+    "location": "England",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Configuration Manager - Remote - Outside IR35",
+    "salary": "\u00a3500 - \u00a3600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B557D64CD198A709F3?shid=5889306EC2C767DF232B&page=1",
+    "location": "England",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Oracle Payroll Functional Consultant - Remote - SC Cleared",
+    "salary": "\u00a3700 - \u00a3800 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/1A7FC19E7218ACA804?shid=5889306EC2C767DF232B&page=1",
+    "location": "England",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Agile Delivery Manager - \u00a3650pd - SC Cleared - Inside IR35",
+    "salary": "600.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2CD33F8EAC6CAA68C2?shid=5889306EC2C767DF232B&page=1",
+    "location": "London",
+    "time": "5 hours ago",
+    "employment_business": "Involved Solutions",
+    "contact": "Involved Solutions"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "PMO - Exit Support Specialist - DV Cleared",
+    "salary": "Excellent Rates Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C33396529FE8CFD4E1?shid=5889306EC2C767DF232B&page=1",
+    "location": "Basingstoke",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "4th Line Cloud Support Engineer - VCF - DV Cleared",
+    "salary": "Excellent Rates Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F84BBE2F542A4F3538?shid=5889306EC2C767DF232B&page=1",
+    "location": "Basingstoke",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "PMO Planner - DV Cleared",
+    "salary": "Excellent Rates Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/519B26F45D1CA72247?shid=5889306EC2C767DF232B&page=1",
+    "location": "Basingstoke",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Cyber Security Analyst (SOC Analyst) - DV Cleared",
+    "salary": "Up to \u00a3600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/569BD605C2C62F3F82?shid=5889306EC2C767DF232B&page=1",
+    "location": "Bracknell",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Cloud Technical Lead - VCF - DV Cleared",
+    "salary": "\u00a3650 - \u00a3750 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4F138E6EBB40871095?shid=5889306EC2C767DF232B&page=1",
+    "location": "Basingstoke",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Infrastructure Architect - VCP - DV Cleared",
+    "salary": "Up to \u00a3650 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/E4F3E6FB28BABFD144?shid=5889306EC2C767DF232B&page=1",
+    "location": "Basingstoke",
+    "time": "5 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Mark Ellis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared Test Manager - Remote/Portsmouth - \u00a360 per hour Umbrella - CONTRACT",
+    "salary": "\u00a360 per hour Umbrella",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/045D1744B4223292ED?shid=5889306EC2C767DF232B&page=1",
+    "location": "Remote/Portsmouth",
+    "time": "7 hours ago",
+    "employment_business": "Click",
+    "contact": "Matthew Sully"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Test Manager - Remote/Portsmouth - \u00a360 per hour Umbrella - CONTRACT",
+    "salary": "\u00a360 per hour Umbrella",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3DFD07778DB462CDFA?shid=5889306EC2C767DF232B&page=1",
+    "location": "Remote/Portsmouth",
+    "time": "7 hours ago",
+    "employment_business": "Click",
+    "contact": "Matthew Sully"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Airbus - Aircraft Fitter - A400M",
+    "salary": "40.00 Hourly - 400.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/1131B0D48DBA915A36?shid=5889306EC2C767DF232B&page=1",
+    "location": "Carterton, Oxfordshire",
+    "time": "8 hours ago",
+    "employment_business": "Arden White Limited",
+    "contact": "Arden White Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "650.00 Daily - 800.00 Daily + Inside IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CFECC48DBB1314A584?shid=5889306EC2C767DF232B&page=1",
+    "location": "London",
+    "time": "10 hours ago",
+    "employment_business": "VIQU IT Recruitment",
+    "contact": "VIQU IT Recruitment"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Head of Data, AI and Automation Government Remote 6 months \u00a3800+",
+    "salary": "850.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0829FD3EB89209EA3F?shid=5889306EC2C767DF232B&page=1",
+    "location": "United Kingdom",
+    "time": "11 hours ago",
+    "employment_business": "Keystream Group Limited",
+    "contact": "Keystream Group Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Commercial Transformation Manager",
+    "salary": "not provided GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/71E04C7BD51BC4216F?shid=5889306EC2C767DF232B&page=1",
+    "location": "Reading, Berkshire",
+    "time": "17 hours ago",
+    "employment_business": "Henderson Scott",
+    "contact": "Henderson Scott"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Cyber Security Analyst - Government, SEIM, Splunk, AWS, M365, Defence, SC Clearance, Hybrid, \u00a3700",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/323209317A7DE5F320?shid=5889306EC2C767DF232B&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "Bangura Solutions",
+    "contact": "Marcus Wallace"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Lead IAM Technical Architect",
+    "salary": "750.00 Daily - 750.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CF7F0F77577A6B934D?shid=5889306EC2C767DF232B&page=1",
+    "location": "Swindon, Wiltshire",
+    "time": "1 day ago",
+    "employment_business": "NonStop Consulting Ltd",
+    "contact": "NonStop Consulting Ltd"
+  }
+]
