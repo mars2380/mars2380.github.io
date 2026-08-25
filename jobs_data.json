@@ -1,5 +1,862 @@
-{
-  "generated": "2026-08-25T09:16:45.575579",
-  "total_jobs": 0,
-  "data": []
-}
+[
+  {
+    "summary": "DevOps | London",
+    "position": "DevOps Engineer (Azure & Big Data)",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6302F3483BE6B7EF26?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "23 mins ago",
+    "employment_business": "Vallum",
+    "contact": "Saugat Singha"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Project Manager - Utilities",
+    "salary": "\u00a3450.0 - \u00a3500.0 per day + Up to \u00a3500pd inside IR35 via umbrella",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9378B20317D282F346?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Coventry",
+    "time": "59 mins ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Sydney Bourne"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Software Engineering",
+    "salary": "\u00a3600.00 - \u00a3650.00 per day + Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/764AC3E74650D7EFCA?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "Adecco",
+    "contact": "Sam Hassan"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Principal AI Data Engineer",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C00AFBADB0148FEDF0?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "Templeton and Partners",
+    "contact": "Dharmendra Rathod"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Data Engineer/Developer",
+    "salary": "\u00a3450 - \u00a3490 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/614AC4DD1540343DCD?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "2 hours ago",
+    "employment_business": "ARM (Advanced Resource Managers)",
+    "contact": "Ash Standring"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Test Consultants - Ellucian Banner, Higher Education, Data Migration",
+    "salary": "Excellent",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D04EDE08DC870C7E1A?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "United Kingdom",
+    "time": "3 hours ago",
+    "employment_business": "Xpertise",
+    "contact": "Andrew Scholes"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Test Manager - Ellucian Banner - Higher Education",
+    "salary": "Excellent",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/189CA9A588F79F2F10?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "United Kingdom",
+    "time": "3 hours ago",
+    "employment_business": "Xpertise",
+    "contact": "Andrew Scholes"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Data Engineer/AI Engineer",
+    "salary": "\u00a3500 p/d Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/706A34864417DEE6A5?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Remote",
+    "time": "16 hours ago",
+    "employment_business": "Optimus E2E",
+    "contact": "Rob Thompsett"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Linux Systems Engineer (DV)",
+    "salary": "\u00a3800 - \u00a3950 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6E50C02EDAD92AB614?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Tom Matherick"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Data Architect - Insurance - London Market",
+    "salary": "\u00a3450 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/618558B05D5ECA3321?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "17 hours ago",
+    "employment_business": "Uniting People",
+    "contact": "Sam Clarke"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Google Cloud Platform Engineer",
+    "salary": "\u00a3375 - \u00a3450 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CD6200E5B9F9AA42AA?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Bournemouth, Dorset",
+    "time": "17 hours ago",
+    "employment_business": "Damia Group LTD",
+    "contact": "Michael Neal"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Application Tester - QA",
+    "salary": "\u00a3416/day via Umbrella",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9103F5ABA10E5BA4C4?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "18 hours ago",
+    "employment_business": "Adecco",
+    "contact": "Yashi Pandey"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "AI Copilot Developer - AVP",
+    "salary": "\u00a3490 per day (Umbrella)",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F98232EB3575C8B40B?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "RedCat Solutions",
+    "contact": "Neil Rogers"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Head of Data Engineering - Microsoft Fabric",
+    "salary": "Upto \u00a3675/Day Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/148F7D08EC8C5B6621?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "20 hours ago",
+    "employment_business": "Careerwise",
+    "contact": "Shikha Sharma"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Business Analyst - Retail Transformation - 6 months - London (Hybrid) \u00a3350/day - Inside IR35",
+    "salary": "\u00a3350 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AA372D7A3AE8CBD4BB?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "20 hours ago",
+    "employment_business": "Hamilton Barnes",
+    "contact": "Sebastian Mendes"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "AI Engineer | Generative AI | LLMs | GitHub Copilot | Claude Code",
+    "salary": "Competitive Day Rate - Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B561749C992AE60208?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "20 hours ago",
+    "employment_business": "Hamilton Barnes",
+    "contact": "Ferdinand Bailey"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Programme Manager - Software Development/Engineering - Digital CMS | Agile",
+    "salary": "\u00a3680 per day Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CADED8680E6F4AFE9A?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Richmond upon Thames",
+    "time": "20 hours ago",
+    "employment_business": "Lexstra Plc",
+    "contact": "Mike Shorricks"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Cyber Risk Manager - Remote - Inside IR35",
+    "salary": "\u00a3600 inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/BF78B3F2272D150FB2?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "22 hours ago",
+    "employment_business": "Solirius Limited",
+    "contact": "Solirius Resourcing"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Full Stack Engineer | Azure Databricks | React | Node.js, Python",
+    "salary": "\u00a3600 to \u00a3850 per day inside ir35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/364910A50278BA9CF7?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "23 hours ago",
+    "employment_business": "Templeton and Partners",
+    "contact": "Gerald Badawy"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Principal AI Data Engineer (GenAI/Agentic AI) - Contract Opportunity",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/BFD18896DB0E5AA348?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "23 hours ago",
+    "employment_business": "Templeton and Partners",
+    "contact": "Gerald Badawy"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "D365 FUNCTIONAL CONSULTANT",
+    "salary": "350 GBP/Day - Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4901A78F39A019C63C?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "23 hours ago",
+    "employment_business": "Intuition IT Solutions Ltd",
+    "contact": "Saraswathi"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Software Engineer - Python- BPSS Cleared",
+    "salary": "320 GBP/Day Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/24484F63748FCA8A77?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "Intuition IT Solutions Ltd",
+    "contact": "Anusha"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Data Engineer",
+    "salary": "\u00a365 - 70 per hour",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/79D0BBA8C1614EED92?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Reading, Berkshire",
+    "time": "1 day ago",
+    "employment_business": "Morson Edge",
+    "contact": "Andy Mealey"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "ServiceNow Developer",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/BBD123EDD3646637BF?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "Coventry, Warwickshire",
+    "time": "1 day ago",
+    "employment_business": "Alexander Mann Solutions - Public Sector Resourcing",
+    "contact": "Public Sector Resourcing"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "QA Engineer (X2)",
+    "salary": "Upto \u00a3600 a day inside",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F323E480B7BC3D0EC3?shid=2648CF10D3F95DDD304A&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "Fuel Recruitment",
+    "contact": "Richard Sutcliffe"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Business Analyst (SC Cleared)",
+    "salary": "Up to \u00a3528 per day + \u00a3528 per day INSIDE",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B5172DD3C5937960EF?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "6 mins ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Kate Barker"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Java GCP Developer",
+    "salary": "\u00a3460.00 - \u00a3560.00 per day + Order 56491",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/EC49314E7CABA52103?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Basildon",
+    "time": "16 mins ago",
+    "employment_business": "Square One Resources",
+    "contact": "Amber Quli"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Java Developer",
+    "salary": "\u00a3400 Per Day Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F46E59D78C9C250CF9?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "United Kingdom",
+    "time": "39 mins ago",
+    "employment_business": "Stealth IT Consulting",
+    "contact": "Neelesh Maroo"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "1st Line Support - SC Cleared",
+    "salary": "200.00 Daily - 210.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9548EC7F39BA541C18?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "United Kingdom",
+    "time": "40 mins ago",
+    "employment_business": "Ecs Resource Group Ltd",
+    "contact": "ECS Resource Group Ltd"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Infrastructure, Cloud & Cyber Lead",
+    "salary": "\u00a3800-900/Day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/08FB2934E081C5D0A0?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "Anson McCade Ltd",
+    "contact": "Connor Smyth"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Test Engineer (SC)",
+    "salary": "\u00a3458 Per Day Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/19546013F5E75A87F0?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "United Kingdom",
+    "time": "15 hours ago",
+    "employment_business": "Stealth IT Consulting",
+    "contact": "Neelesh Maroo"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Java Developer",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/890C38F3154F3227A3?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Ipswich, Suffolk",
+    "time": "16 hours ago",
+    "employment_business": "Adecco",
+    "contact": "Swati Mylavarapu"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior Test Engineer",
+    "salary": "\u00a3458/day inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B331DF094B5CE91627?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "United Kingdom",
+    "time": "17 hours ago",
+    "employment_business": "Stealth IT Consulting",
+    "contact": "C Osman"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Business Analyst",
+    "salary": "\u00a3450 - \u00a3550 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0E2DE3A696BE0D55FE?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "England",
+    "time": "17 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Jonathan English"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Python/SQL Engineer",
+    "salary": "\u00a3550 - 650 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/534C902DA7C3E2423B?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Harmondsworth, Greater London, England",
+    "time": "17 hours ago",
+    "employment_business": "Xpertise",
+    "contact": "Matt Challis"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Data Architect - Insurance - London Market",
+    "salary": "\u00a3450 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/618558B05D5ECA3321?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "17 hours ago",
+    "employment_business": "Uniting People",
+    "contact": "Sam Clarke"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Google Cloud Platform Engineer",
+    "salary": "\u00a3375 - \u00a3450 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CD6200E5B9F9AA42AA?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Bournemouth, Dorset",
+    "time": "17 hours ago",
+    "employment_business": "Damia Group LTD",
+    "contact": "Michael Neal"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "MAPPS Business Analyst",
+    "salary": "\u00a3580/day inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/557EE28B5151780486?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "United Kingdom",
+    "time": "18 hours ago",
+    "employment_business": "Stealth IT Consulting",
+    "contact": "C Osman"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior QA Automation Engineer/SDET - GenAI & LLM Testing",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AB81F052C706B291B8?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "Lorien",
+    "contact": "Nicholas Marshall"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior Test Engineer",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A73A8FE06F5711DBAF?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Glasgow, United Kingdom - Hybrid Avon",
+    "time": "19 hours ago",
+    "employment_business": "",
+    "contact": "Asaad"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior AI Engineer",
+    "salary": "\u00a3850 - \u00a3900",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4FA49D084FC51BDBF0?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "",
+    "contact": "Thomas Maher"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior Business Analyst",
+    "salary": "\u00a3550.00 - \u00a3590.00 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/E873793C4060AF22D7?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "England",
+    "time": "19 hours ago",
+    "employment_business": "Experis IT",
+    "contact": "Mortimer Marshall"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "SC Cleared Cloud Engineer - AWS",
+    "salary": "\u00a3350 - \u00a3375 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7D325633A195DCB1D9?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "20 hours ago",
+    "employment_business": "Sanderson Government &amp; Defence",
+    "contact": "Ben Halligan"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Data Architect",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9EF154213AD8865371?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "West Midlands",
+    "time": "20 hours ago",
+    "employment_business": "MRP Technology Ltd",
+    "contact": "Fin Isted"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Business Analyst- Required SC + NPPV3 clearance",
+    "salary": "581GBP/Day(Inside IR35)",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/37A9D41A4BDE569C0E?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Remote",
+    "time": "20 hours ago",
+    "employment_business": "eTeam Workforce Limited",
+    "contact": "Enugandla Mounika"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Identity & Security Engineer JWT",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/ED5F0E8429D054B125?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "21 hours ago",
+    "employment_business": "Intuition IT Solutions Ltd",
+    "contact": "Ragu Krish"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Data Analyst",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CDC3C9C3ED0E379264?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "22 hours ago",
+    "employment_business": "Qualient Technology Solutions UK Limited",
+    "contact": "Prasad Kakaraparthi"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Network Engineer (Inside IR35,. Cisco, Arista, Palo Alto)",
+    "salary": "\u00a3700 - 800 per day, Benefits: Hybrid working",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8F44B4E53BDBB6FC69?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "City Of London",
+    "time": "22 hours ago",
+    "employment_business": "Xcede",
+    "contact": "Matt Ohare"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Forward Deployed Engineer",
+    "salary": "\u00a3400 - 450 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/696CA384518D1DF9C8?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "Hampshire, Remote work",
+    "time": "23 hours ago",
+    "employment_business": "TechShack",
+    "contact": "Louis DaSilva"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Data Engineer - DBT & Snowflake",
+    "salary": "\u00a3450 - \u00a3500 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7609852CDE2EA869A1?shid=D4F085E2EB33AF659A76&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "",
+    "contact": "Tom Fielding"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Storage Infrastructure Engineer (NetApp)",
+    "salary": "Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A924E92639591F3827?shid=0FD9B779020134FC69CD&page=1",
+    "location": "Stevenage - 3 days a week",
+    "time": "3 hours ago",
+    "employment_business": "Methods Business and Digital Technology Limited",
+    "contact": "Hadia Santanton"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Senior Linux System Administrator",
+    "salary": "\u00a3750 - \u00a3800 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2E7334AF2A2A76DB3B?shid=0FD9B779020134FC69CD&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Oliver Bould"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Linux Systems Engineer (DV)",
+    "salary": "\u00a3800 - \u00a3950 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6E50C02EDAD92AB614?shid=0FD9B779020134FC69CD&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Tom Matherick"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Technical Delivery Manager/Implementation Manager",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2164D96EF1C99FB8AC?shid=0FD9B779020134FC69CD&page=1",
+    "location": "London",
+    "time": "19 hours ago",
+    "employment_business": "Xcede",
+    "contact": "Anwar Bizimana"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Senior Networking & Security Specialist",
+    "salary": "\u00a3500 - \u00a3600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F2973D4262386B4C43?shid=0FD9B779020134FC69CD&page=1",
+    "location": "Newbury",
+    "time": "20 hours ago",
+    "employment_business": "CBS Butler",
+    "contact": "Tom McParland"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "SCADA Engineer",
+    "salary": "\u00a3550 - 600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/06226B074688BFA40B?shid=7873EACEA89C4356342A&page=1",
+    "location": "Woking",
+    "time": "42 mins ago",
+    "employment_business": "La Fosse Associates Limited",
+    "contact": "Antonio Alfieri"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Support Engineer - DV",
+    "salary": "\u00a3250 - \u00a3300 p/d Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/820D00C516BDA03538?shid=7873EACEA89C4356342A&page=1",
+    "location": "Farnborough",
+    "time": "1 hour ago",
+    "employment_business": "Fuel Recruitment",
+    "contact": "Fraser Irgens"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Senior Linux System Administrator",
+    "salary": "\u00a3750 - \u00a3800 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2E7334AF2A2A76DB3B?shid=7873EACEA89C4356342A&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Oliver Bould"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Linux Systems Engineer (DV)",
+    "salary": "\u00a3800 - \u00a3950 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6E50C02EDAD92AB614?shid=7873EACEA89C4356342A&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Tom Matherick"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Capacity & Demand Manager - DV Cleared",
+    "salary": "\u00a3600 - \u00a3700 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0BC358D48734BAAFD3?shid=7873EACEA89C4356342A&page=1",
+    "location": "Corsham",
+    "time": "18 hours ago",
+    "employment_business": "CBS Butler",
+    "contact": "Phil Johnson"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "ION SME/Application Support Engineer",
+    "salary": "Up to \u00a31k per day - Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/E8834CDD740605F7E2?shid=7873EACEA89C4356342A&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "Hunter Bond",
+    "contact": "James Evans"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Business Analyst (SC Cleared)",
+    "salary": "Up to \u00a3528 per day + \u00a3528 per day INSIDE",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B5172DD3C5937960EF?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "7 mins ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Kate Barker"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC cleared Enterprise Architect",
+    "salary": "\u00a3650 - \u00a3700 per day + Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CCCA2BB994FCB7F26B?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "City of London",
+    "time": "23 mins ago",
+    "employment_business": "Sanderson Government &amp; Defence",
+    "contact": "Ewa Chodorek"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "DevOps Engineer (Azure & Big Data)",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6302F3483BE6B7EF26?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "24 mins ago",
+    "employment_business": "Vallum",
+    "contact": "Saugat Singha"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "1st Line Support - SC Cleared",
+    "salary": "200.00 Daily - 210.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9548EC7F39BA541C18?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "United Kingdom",
+    "time": "41 mins ago",
+    "employment_business": "Ecs Resource Group Ltd",
+    "contact": "ECS Resource Group Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SCADA Engineer",
+    "salary": "\u00a3550 - 600 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/06226B074688BFA40B?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Woking",
+    "time": "42 mins ago",
+    "employment_business": "La Fosse Associates Limited",
+    "contact": "Antonio Alfieri"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Project Manager - Utilities",
+    "salary": "\u00a3450.0 - \u00a3500.0 per day + Up to \u00a3500pd inside IR35 via umbrella",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9378B20317D282F346?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Coventry",
+    "time": "1 hour ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Sydney Bourne"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Commercial Officer - SC",
+    "salary": "540.00 Daily - 556.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/10ECEB87A082FF07C1?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Portchester, Hampshire",
+    "time": "1 hour ago",
+    "employment_business": "Aspect Resources",
+    "contact": "Aspect Resources"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Programme Manager",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/25047308CDACE7ECD2?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Gloucestershire",
+    "time": "1 hour ago",
+    "employment_business": "Gold Group",
+    "contact": "Gold Group"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Server Tooling & Orchestration Specialist",
+    "salary": "620.00 Daily via umbrella GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/16CA1A7A6ABE4A962D?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "United Kingdom",
+    "time": "1 hour ago",
+    "employment_business": "Hays Technology",
+    "contact": "Hays Technology"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Compensation & Reward Lead",
+    "salary": "not provided GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C1B3632DA133A72D21?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Reading, Berkshire",
+    "time": "1 hour ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "HR Advisor",
+    "salary": "19.23 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/731F25A97B1709493B?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Gloucestershire",
+    "time": "1 hour ago",
+    "employment_business": "Morson Edge",
+    "contact": "Morson Edge"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Software Engineering",
+    "salary": "\u00a3600.00 - \u00a3650.00 per day + Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/764AC3E74650D7EFCA?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "Adecco",
+    "contact": "Sam Hassan"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Principal AI Data Engineer",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C00AFBADB0148FEDF0?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "Templeton and Partners",
+    "contact": "Dharmendra Rathod"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Data Governance",
+    "salary": "\u00a3550 - 575 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0E85893C9EEBBDC02A?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "1 hour ago",
+    "employment_business": "IO Associates",
+    "contact": "Annie Midgley"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Data Engineer/Developer",
+    "salary": "\u00a3450 - \u00a3490 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/614AC4DD1540343DCD?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "2 hours ago",
+    "employment_business": "ARM (Advanced Resource Managers)",
+    "contact": "Ash Standring"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Identity Consultant: Privileged Identity Management, Entra ID, Identity Lifecycle Management",
+    "salary": "\u00a3545-\u00a3618/Day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/369E5E520A9B94C4F8?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Remote",
+    "time": "3 hours ago",
+    "employment_business": "",
+    "contact": "Applications"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Test Consultants - Ellucian Banner, Higher Education, Data Migration",
+    "salary": "Excellent",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D04EDE08DC870C7E1A?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "United Kingdom",
+    "time": "3 hours ago",
+    "employment_business": "Xpertise",
+    "contact": "Andrew Scholes"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Test Manager - Ellucian Banner - Higher Education",
+    "salary": "Excellent",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/189CA9A588F79F2F10?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "United Kingdom",
+    "time": "3 hours ago",
+    "employment_business": "Xpertise",
+    "contact": "Andrew Scholes"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Storage Infrastructure Engineer (NetApp)",
+    "salary": "Negotiable",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A924E92639591F3827?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Stevenage - 3 days a week",
+    "time": "3 hours ago",
+    "employment_business": "Methods Business and Digital Technology Limited",
+    "contact": "Hadia Santanton"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "PostgreSQL Forensic Specialist (SC Cleared)",
+    "salary": "\u00a3500 - 600 Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/022AC004E6DBD25AC8?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "London",
+    "time": "5 hours ago",
+    "employment_business": "scrumconnect ltd",
+    "contact": "Recruitment Team"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SITE MANAGER",
+    "salary": "350.00 Daily - 400.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8F8B177317DED938C9?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Tadley, Hampshire",
+    "time": "11 hours ago",
+    "employment_business": "Astute Technical Recruitment Ltd",
+    "contact": "Astute Technical Recruitment Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Test Engineer (SC)",
+    "salary": "\u00a3458 Per Day Inside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/19546013F5E75A87F0?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "United Kingdom",
+    "time": "15 hours ago",
+    "employment_business": "Stealth IT Consulting",
+    "contact": "Neelesh Maroo"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Data Engineer/AI Engineer",
+    "salary": "\u00a3500 p/d Outside IR35",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/706A34864417DEE6A5?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Remote",
+    "time": "16 hours ago",
+    "employment_business": "Optimus E2E",
+    "contact": "Rob Thompsett"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Linux System Administrator",
+    "salary": "\u00a3750 - \u00a3800 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2E7334AF2A2A76DB3B?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "LA International Computer Consultants Ltd",
+    "contact": "Oliver Bould"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Linux Systems Engineer (DV)",
+    "salary": "\u00a3800 - \u00a3950 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6E50C02EDAD92AB614?shid=ED9E529B05A4169B7C0E&page=1",
+    "location": "Reading, Berkshire",
+    "time": "16 hours ago",
+    "employment_business": "Hays Specialist Recruitment",
+    "contact": "Tom Matherick"
+  }
+]
