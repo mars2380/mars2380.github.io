@@ -1,5 +1,372 @@
-{
-  "generated": "2026-09-27T00:03:26.602002",
-  "total_jobs": 0,
-  "data": []
-}
+[
+  {
+    "summary": "DevOps | London",
+    "position": "Azure DevOps Deployment Consultant",
+    "salary": "500.00 Daily - 550.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5377723A37F80C8BE0?shid=8DC08C0B3C68FB686E4C&page=1",
+    "location": "Newport Pagnell, Buckinghamshire",
+    "time": "4 hours ago",
+    "employment_business": "Data Careers",
+    "contact": "Data Careers"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Network Engineer (DV Security Clearance)",
+    "salary": "\u00a368.75 per hour, Benefits: Overtime Rate",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/BD1E56D751358BD66D?shid=8DC08C0B3C68FB686E4C&page=1",
+    "location": "Stevenage",
+    "time": "16 hours ago",
+    "employment_business": "Certain Advantage",
+    "contact": "Carl Delaney"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "\u00a3600 - \u00a3675 per day + Inside IR35 DOE",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3EE029E36E2BE0C1C3?shid=8DC08C0B3C68FB686E4C&page=1",
+    "location": "London",
+    "time": "17 hours ago",
+    "employment_business": "Damia Group LTD",
+    "contact": "Diana Sydorenko"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior IT Project Manager",
+    "salary": "Not specified",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/062AD703AE8506E14E?shid=8DC08C0B3C68FB686E4C&page=1",
+    "location": "Lambeth",
+    "time": "17 hours ago",
+    "employment_business": "Certain Advantage",
+    "contact": "Carl Delaney"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Senior DevOps Engineer - ELK",
+    "salary": "500.00 Daily - 700.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B0DD75C2E0CAF43B90?shid=8DC08C0B3C68FB686E4C&page=1",
+    "location": "London",
+    "time": "23 hours ago",
+    "employment_business": "ECS",
+    "contact": "ECS"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Java/AWS Developer - Inside IR35 - Investment Banking",
+    "salary": "600.00 Daily - 700.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/1318C540039D775143?shid=BBE7DDBD5BF9CD4F9F68&page=1",
+    "location": "London",
+    "time": "3 hours ago",
+    "employment_business": "Lorien Resourcing Limited",
+    "contact": "Lorien Resourcing Limited"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "\u00a3600 - \u00a3675 per day + Inside IR35 DOE",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3EE029E36E2BE0C1C3?shid=BBE7DDBD5BF9CD4F9F68&page=1",
+    "location": "London",
+    "time": "17 hours ago",
+    "employment_business": "Damia Group LTD",
+    "contact": "Diana Sydorenko"
+  },
+  {
+    "summary": "ARTICLE | London",
+    "position": "Goods Inwards Inspector",
+    "salary": "28.71 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B5757D8DE54CDCEFCC?shid=D2D5061469E2A4FD4431&page=1",
+    "location": "Stevenage, Hertfordshire",
+    "time": "18 hours ago",
+    "employment_business": "Line Up Aviation",
+    "contact": "Line Up Aviation"
+  },
+  {
+    "summary": "ARTICLE | London",
+    "position": "First Article Inspector",
+    "salary": "32.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2388CC0D8FD399E08E?shid=D2D5061469E2A4FD4431&page=1",
+    "location": "Gloucestershire",
+    "time": "1 day ago",
+    "employment_business": "Verify Europe",
+    "contact": "Verify Europe"
+  },
+  {
+    "summary": "SRE | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "\u00a3600 - \u00a3675 per day + Inside IR35 DOE",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3EE029E36E2BE0C1C3?shid=E327C5651BE195EF57C1&page=1",
+    "location": "London",
+    "time": "17 hours ago",
+    "employment_business": "Damia Group LTD",
+    "contact": "Diana Sydorenko"
+  },
+  {
+    "summary": "SRE | London",
+    "position": "Sub Agent",
+    "salary": "420.00 Daily - 450.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D3C978AA1F527563E3?shid=E327C5651BE195EF57C1&page=1",
+    "location": "Basingstoke, Hampshire",
+    "time": "1 day ago",
+    "employment_business": "Fawkes &amp; Reece London",
+    "contact": "Fawkes &amp; Reece London"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Network Engineer (DV Security Clearance)",
+    "salary": "\u00a368.75 per hour, Benefits: Overtime Rate",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/BD1E56D751358BD66D?shid=5C6D301AD1542AE5C22E&page=1",
+    "location": "Stevenage",
+    "time": "16 hours ago",
+    "employment_business": "Certain Advantage",
+    "contact": "Carl Delaney"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Java Developer",
+    "salary": "600.00 Daily - 620.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A5A22E7399C9B045A3?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "United Kingdom",
+    "time": "22 mins ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Lead Data Analyst - 12 Months - Glasgow/London (Hybrid) - \u00a3750 per day - Inside IR35 - SC Clearance",
+    "salary": "",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6662B61EFA8BD00438?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Glasgow/London",
+    "time": "2 hours ago",
+    "employment_business": "Allen Lane Ltd.",
+    "contact": "Darshan Dixit"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Approved Electrician",
+    "salary": "27.00 Hourly - 30.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6682D2BA5AD3AC4B80?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Berkshire",
+    "time": "3 hours ago",
+    "employment_business": "MJM Industrial Ltd",
+    "contact": "MJM Industrial Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Electrician",
+    "salary": "20.79 Hourly - 39.39 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/02C49A64DE8D4C2DD4?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Portsmouth, Hampshire",
+    "time": "3 hours ago",
+    "employment_business": "Matchtech",
+    "contact": "Matchtech"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Lead Hardware Engineer",
+    "salary": "65.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/67F86DC44775777DA7?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Bedfordshire",
+    "time": "3 hours ago",
+    "employment_business": "WINSEARCH",
+    "contact": "Winsearch"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Aircraft Technicians",
+    "salary": "27.95 Hourly \u00a327.95 PAYE/\u00a336.63 LTD GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A7D4956847E9EFC1C4?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Fareham, Hampshire",
+    "time": "4 hours ago",
+    "employment_business": "MPI Limited",
+    "contact": "MPI Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Aircraft Electrical Fitter",
+    "salary": "28.16 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/72A531F08A4E636173?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "United Kingdom",
+    "time": "4 hours ago",
+    "employment_business": "Arm",
+    "contact": "ARM"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SEND Teaching Assistant - Watford - Immediate Start",
+    "salary": "80.00 Daily - 100.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A5699BCF25F469021F?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Watford, Hertfordshire",
+    "time": "4 hours ago",
+    "employment_business": "Envision Education",
+    "contact": "Envision Education"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Commercial Manager",
+    "salary": "600.00 Daily - 700.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/45A2DE239929203EA5?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Farnborough, Hampshire",
+    "time": "4 hours ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Security Lead",
+    "salary": "+ Competitive Inside IR35 Day Rate GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/91EA06EF85393812B9?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "London",
+    "time": "4 hours ago",
+    "employment_business": "SUMMER-BROWNING ASSOCIATES LIMITED",
+    "contact": "SUMMER-BROWNING ASSOCIATES LIMITED"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Systems Specialist - SAP SuccessFactors",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4EAE60BC9A5BD63DA0?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Farnborough, Hampshire",
+    "time": "4 hours ago",
+    "employment_business": "Gold Group",
+    "contact": "Gold Group"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Indirect Procurement Specialist",
+    "salary": "34.00 Hourly - 46.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/2750312027151331C1?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Ampthill, Bedfordshire",
+    "time": "4 hours ago",
+    "employment_business": "Arm",
+    "contact": "ARM"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "DBS Chefs - Thurrock area",
+    "salary": "16.00 Hourly - 18.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/82735ACD9682E408E7?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Essex",
+    "time": "4 hours ago",
+    "employment_business": "Blue Arrow - St Albans",
+    "contact": "Blue Arrow - St Albans"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Azure DevOps Deployment Consultant",
+    "salary": "500.00 Daily - 550.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5377723A37F80C8BE0?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Newport Pagnell, Buckinghamshire",
+    "time": "4 hours ago",
+    "employment_business": "Data Careers",
+    "contact": "Data Careers"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Head of Technical Architecture - SC Clearance Needed",
+    "salary": "900.00 Daily INSIDE IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CC6D05364482576F0F?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "London",
+    "time": "4 hours ago",
+    "employment_business": "MAYFLEET RECRUITMENT LIMITED",
+    "contact": "Mayfleet Recruitment Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared Service Designer",
+    "salary": "525.00 Daily - 540.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AA920B53320DD1A64F?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "London",
+    "time": "5 hours ago",
+    "employment_business": "Sanderson Government and Defence",
+    "contact": "Sanderson Government and Defence"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Shipping Specialist",
+    "salary": "37k Annual GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/80C20563B89D374EA0?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Fen Ditton, Cambridgeshire",
+    "time": "5 hours ago",
+    "employment_business": "Morson Edge",
+    "contact": "Morson Edge"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Capacity/Demand Manager",
+    "salary": "not provided GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/DA954E631E9CC87ED8?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Hampshire",
+    "time": "5 hours ago",
+    "employment_business": "CBSbutler Holdings Limited",
+    "contact": "CBSbutler Holdings Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Apron Tractor Driver",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/78DE3688544B38B91A?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Stansted, Essex",
+    "time": "5 hours ago",
+    "employment_business": "Logic 360 Ltd",
+    "contact": "Logic 360 Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Software Developer",
+    "salary": "725.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3C74BDB55C239F111D?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "London",
+    "time": "5 hours ago",
+    "employment_business": "Keystream Group Limited",
+    "contact": "Keystream Group Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SAP Finance Functional Consultant",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/26AFE6F902EE187D7E?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Frimley, Surrey",
+    "time": "6 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Risk Manager - DV",
+    "salary": "500.00 Daily - 531.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/E1E1B3330104297F8C?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Wiltshire",
+    "time": "6 hours ago",
+    "employment_business": "Aspect Resources",
+    "contact": "Aspect Resources"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared User Researcher",
+    "salary": "525.00 Daily - 540.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/D3A141872BF4E36BC3?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "London",
+    "time": "6 hours ago",
+    "employment_business": "Sanderson Government and Defence",
+    "contact": "Sanderson Government and Defence"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Enterprise Architect",
+    "salary": "100.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/926B6087266E9E60AD?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Reading, Berkshire",
+    "time": "7 hours ago",
+    "employment_business": "Synergize Consulting Limited",
+    "contact": "Synergize Consulting Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Systems Integration Architect",
+    "salary": "75.00 Hourly - 85.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/59327F4A21E7555CA4?shid=59174F5F2BEB2FDFDD5B&page=1",
+    "location": "Reading, Berkshire",
+    "time": "11 hours ago",
+    "employment_business": "Defence",
+    "contact": "Defence"
+  }
+]
