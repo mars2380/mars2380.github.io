@@ -1,5 +1,452 @@
-{
-  "generated": "2026-10-25T19:13:11.231424",
-  "total_jobs": 0,
-  "data": []
-}
+[
+  {
+    "summary": "DevOps | London",
+    "position": "Senior Azure Platform Engineer",
+    "salary": "525.00 Daily - 560.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/96870AADD17CB83A59?shid=374CFA11725411270652&page=1",
+    "location": "United Kingdom",
+    "time": "11 hours ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Microsoft Office Add-In Developer (.NET/C#)",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0A194B6E811C9D45BB?shid=374CFA11725411270652&page=1",
+    "location": "London",
+    "time": "11 hours ago",
+    "employment_business": "Matchtech",
+    "contact": "Matchtech"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "600.00 Daily - 675.00 Daily + Inside IR35 DOE GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AE3F32B52964C08233?shid=374CFA11725411270652&page=1",
+    "location": "South East",
+    "time": "12 hours ago",
+    "employment_business": "Damia Group Ltd",
+    "contact": "Damia Group Ltd"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Linux/DevOps SME - DV Cleared",
+    "salary": "550.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8F44A3D6FC7785A237?shid=374CFA11725411270652&page=1",
+    "location": "Basingstoke, Hampshire",
+    "time": "19 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "DevOps | London",
+    "position": "Azure DevOps Engineer",
+    "salary": "500.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A198A91ACAD3376E35?shid=374CFA11725411270652&page=1",
+    "location": "London",
+    "time": "20 hours ago",
+    "employment_business": "Brio Digital",
+    "contact": "Brio Digital"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Senior AI Engineer",
+    "salary": "\u00a3600 - 650 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/85C4A19A5EFF2F9004?shid=301766D6E948967C1AF5&page=1",
+    "location": "Harwell, Oxfordshire, England",
+    "time": "3 hours ago",
+    "employment_business": "IO Associates",
+    "contact": "Rebecca Long"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Solution Architect",
+    "salary": "520.00 Daily - 598.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5C2FC964E702375D61?shid=301766D6E948967C1AF5&page=1",
+    "location": "London",
+    "time": "6 hours ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Java Developer - eDV Clearance",
+    "salary": "600.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/640A7A0CFB5D90BDF2?shid=301766D6E948967C1AF5&page=1",
+    "location": "Cheltenham, Gloucestershire",
+    "time": "7 hours ago",
+    "employment_business": "Additional Resources",
+    "contact": "Additional Resources"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "600.00 Daily - 675.00 Daily + Inside IR35 DOE GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AE3F32B52964C08233?shid=301766D6E948967C1AF5&page=1",
+    "location": "South East",
+    "time": "12 hours ago",
+    "employment_business": "Damia Group Ltd",
+    "contact": "Damia Group Ltd"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Technical Lead: 3 Month Contract - Warwickshire/Hybrid",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/CD6A968BBA338C4BAB?shid=301766D6E948967C1AF5&page=1",
+    "location": "Warwickshire",
+    "time": "20 hours ago",
+    "employment_business": "Adecco",
+    "contact": "Adecco"
+  },
+  {
+    "summary": "AWS | London",
+    "position": "Contract - Senior Data Engineer (Snowflake Cortex)",
+    "salary": "600.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0DB4527D5955EEFFF4?shid=301766D6E948967C1AF5&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "Opus Recruitment Solutions",
+    "contact": "Opus Recruitment Solutions"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Linux/DevOps SME - DV Cleared",
+    "salary": "550.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8F44A3D6FC7785A237?shid=13B2A0350C8E35392CC1&page=1",
+    "location": "Basingstoke, Hampshire",
+    "time": "19 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Senior Software Engineer - DV Cleared",
+    "salary": "550.00 Daily - 600.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5BC84B16582B5DF91B?shid=13B2A0350C8E35392CC1&page=1",
+    "location": "Bletchley, Buckinghamshire",
+    "time": "22 hours ago",
+    "employment_business": "Rise Technical Recruitment",
+    "contact": "Rise Technical Recruitment"
+  },
+  {
+    "summary": "Ansible | London",
+    "position": "Automation Developer",
+    "salary": "550.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/EA72329EA611367AD3?shid=13B2A0350C8E35392CC1&page=1",
+    "location": "Lambeth, London",
+    "time": "1 day ago",
+    "employment_business": "Certain Advantage",
+    "contact": "Certain Advantage"
+  },
+  {
+    "summary": "SRE | London",
+    "position": "Incident Command Manager",
+    "salary": "GBP per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/C72DE4D60B042817BE?shid=FDDD615BA38FDBD6ED3F&page=1",
+    "location": "Greater London, England",
+    "time": "1 day ago",
+    "employment_business": "",
+    "contact": "Click apply"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Software Engineer, AI Coding Tasks (Contract)",
+    "salary": "75.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/7A045B89F121D64FF6?shid=2DAE828B102C0B25CE5F&page=1",
+    "location": "United Kingdom",
+    "time": "43 mins ago",
+    "employment_business": "Askable",
+    "contact": "Askable"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "IT Infrastructure Laboratory Technician",
+    "salary": "450.00 Daily - 550.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/F9AC9A11DE6DD8B91D?shid=2DAE828B102C0B25CE5F&page=1",
+    "location": "Cheltenham, Gloucestershire",
+    "time": "19 hours ago",
+    "employment_business": "Guidant Global",
+    "contact": "Guidant Global"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Linux/DevOps SME - DV Cleared",
+    "salary": "550.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8F44A3D6FC7785A237?shid=2DAE828B102C0B25CE5F&page=1",
+    "location": "Basingstoke, Hampshire",
+    "time": "19 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Senior Software Engineer - DV Cleared",
+    "salary": "550.00 Daily - 600.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5BC84B16582B5DF91B?shid=2DAE828B102C0B25CE5F&page=1",
+    "location": "Bletchley, Buckinghamshire",
+    "time": "22 hours ago",
+    "employment_business": "Rise Technical Recruitment",
+    "contact": "Rise Technical Recruitment"
+  },
+  {
+    "summary": "Linux | London",
+    "position": "Incident Response Specialist",
+    "salary": "475.00 Daily - 525.00 Daily Inside IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3E19C8758A8ED49AF4?shid=2DAE828B102C0B25CE5F&page=1",
+    "location": "London",
+    "time": "1 day ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "IT Supplier Manager",
+    "salary": "Up to 88 per hour, Inside IR35 (DOE)",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/126AAE82D571177852?shid=BF33CD194D239938C13D&page=1",
+    "location": "Reading",
+    "time": "18 mins ago",
+    "employment_business": "Arm",
+    "contact": "ARM"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Oracle Data Engineer (SC Cleared)",
+    "salary": "560.00 Daily - 570.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/56DE04A0E1016DC238?shid=BF33CD194D239938C13D&page=1",
+    "location": "South East",
+    "time": "43 mins ago",
+    "employment_business": "Sanderson Government and Defence",
+    "contact": "Sanderson Government and Defence"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Junior Data Manager",
+    "salary": "Negotiable GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/092A210C920977AE3C?shid=BF33CD194D239938C13D&page=1",
+    "location": "Reading, Oxfordshire",
+    "time": "2 hours ago",
+    "employment_business": "Sanderson Government and Defence",
+    "contact": "Sanderson Government and Defence"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Software Engineer-DV Security Cleared",
+    "salary": "550.00 Daily - 600.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5D6F50BA12222A5371?shid=BF33CD194D239938C13D&page=1",
+    "location": "Hanslope, Buckinghamshire",
+    "time": "5 hours ago",
+    "employment_business": "Morson Edge",
+    "contact": "Morson Edge"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Business Architect - SC Cleared - 6 Month Contract",
+    "salary": "\u00a3700 - \u00a3750 per day",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/DB251F2D20366968F1?shid=BF33CD194D239938C13D&page=1",
+    "location": "London",
+    "time": "6 hours ago",
+    "employment_business": "Involved Solutions",
+    "contact": "James Reading"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Solution Architect",
+    "salary": "520.00 Daily - 598.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/5C2FC964E702375D61?shid=BF33CD194D239938C13D&page=1",
+    "location": "London",
+    "time": "6 hours ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Enterprise Architect",
+    "salary": "750.00 Daily - 900.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B6CD9E5F817EC48275?shid=BF33CD194D239938C13D&page=1",
+    "location": "Reading, Oxfordshire",
+    "time": "6 hours ago",
+    "employment_business": "Damia Group Ltd",
+    "contact": "Damia Group Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Principal Software Engineer",
+    "salary": "73.68 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9B7721DD8890DF38D4?shid=BF33CD194D239938C13D&page=1",
+    "location": "Cowes, Isle of Wight",
+    "time": "6 hours ago",
+    "employment_business": "Matchtech",
+    "contact": "Matchtech"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Java Developer - eDV Clearance",
+    "salary": "600.00 Daily - 650.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/640A7A0CFB5D90BDF2?shid=BF33CD194D239938C13D&page=1",
+    "location": "Cheltenham, Gloucestershire",
+    "time": "7 hours ago",
+    "employment_business": "Additional Resources",
+    "contact": "Additional Resources"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Administration Coordinator - \u00a3650 Inside IR35 - Gloucester/London",
+    "salary": "650.00 Daily Inside IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AD188E25CA59DC31F4?shid=BF33CD194D239938C13D&page=1",
+    "location": "South West",
+    "time": "11 hours ago",
+    "employment_business": "Exalto Consulting Ltd",
+    "contact": "Exalto Consulting ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Google Workspace Administrator",
+    "salary": "35.00 Annual Day Rate GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/DA7022482DB3505839?shid=BF33CD194D239938C13D&page=1",
+    "location": "South East",
+    "time": "11 hours ago",
+    "employment_business": "SUMMER-BROWNING ASSOCIATES LIMITED",
+    "contact": "SUMMER-BROWNING ASSOCIATES LIMITED"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Microsoft Office Add-In Developer (.NET/C#)",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0A194B6E811C9D45BB?shid=BF33CD194D239938C13D&page=1",
+    "location": "London",
+    "time": "11 hours ago",
+    "employment_business": "Matchtech",
+    "contact": "Matchtech"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Senior Azure Platform Engineer",
+    "salary": "525.00 Daily - 560.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/96870AADD17CB83A59?shid=BF33CD194D239938C13D&page=1",
+    "location": "United Kingdom",
+    "time": "11 hours ago",
+    "employment_business": "Experis",
+    "contact": "Experis"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared DevOps Engineer",
+    "salary": "600.00 Daily - 675.00 Daily + Inside IR35 DOE GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/AE3F32B52964C08233?shid=BF33CD194D239938C13D&page=1",
+    "location": "South East",
+    "time": "12 hours ago",
+    "employment_business": "Damia Group Ltd",
+    "contact": "Damia Group Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared Legacy Tech Lead - Enterprise Integration Services",
+    "salary": "500.00 Daily - 600.00 Daily Outside IR35, Hybrid Working GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/B54F1A38EA16D863C4?shid=BF33CD194D239938C13D&page=1",
+    "location": "United Kingdom",
+    "time": "13 hours ago",
+    "employment_business": "TXP",
+    "contact": "TXP"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Wintel Security Analyst (Active SC clearance only)",
+    "salary": "Negotiable GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/6454F9999FA15F6ED7?shid=BF33CD194D239938C13D&page=1",
+    "location": "Wokingham, Berkshire",
+    "time": "14 hours ago",
+    "employment_business": "Gazelle Global Consulting Ltd",
+    "contact": "Gazelle Global Consulting Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Data Engineer - GCP",
+    "salary": "525.00 Daily - 575.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/857AD68332233C19DA?shid=BF33CD194D239938C13D&page=1",
+    "location": "London",
+    "time": "15 hours ago",
+    "employment_business": "Adecco",
+    "contact": "Adecco"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "SC Cleared Service Designer",
+    "salary": "500.00 Daily - 600.00 Daily *Outside IR35 GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/3B4F429AB492481E9E?shid=BF33CD194D239938C13D&page=1",
+    "location": "United Kingdom",
+    "time": "19 hours ago",
+    "employment_business": "Damia Group Ltd",
+    "contact": "Damia Group Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Electrical Package Manager",
+    "salary": "58.00 Hourly - 60.75 Hourly Umbrella PAYE GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/A9C1AE12E6E0E47E69?shid=BF33CD194D239938C13D&page=1",
+    "location": "Oxford, Oxfordshire",
+    "time": "19 hours ago",
+    "employment_business": "Highfield Professional Solutions Ltd",
+    "contact": "Highfield Professional Solutions Ltd"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Lab Technician - Electrical/Mechanical",
+    "salary": "9999.00 Annual GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/8E2EDA4EF915A0CA48?shid=BF33CD194D239938C13D&page=1",
+    "location": "South East",
+    "time": "19 hours ago",
+    "employment_business": "Stott &amp; May Professional Search Limited",
+    "contact": "Stott &amp; May Professional Search Limited"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Manufacturing Engineer",
+    "salary": "350.00 Daily - 390.00 Daily GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/0E7FFE8969140C41C4?shid=BF33CD194D239938C13D&page=1",
+    "location": "Romsey, Hampshire",
+    "time": "19 hours ago",
+    "employment_business": "CBSbutler Holdings Limited trading as CBSbutler",
+    "contact": "CBSbutler Holdings Limited trading as CBSbutler"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Production Planner (DV Clearance)",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9D91EFEBD68661ABBB?shid=BF33CD194D239938C13D&page=1",
+    "location": "Aldermaston, Berkshire",
+    "time": "19 hours ago",
+    "employment_business": "RHL",
+    "contact": "RHL"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Production Planner",
+    "salary": "GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/4AC69FEB69FB19FBF2?shid=BF33CD194D239938C13D&page=1",
+    "location": "Reading, Oxfordshire",
+    "time": "19 hours ago",
+    "employment_business": "Belcan",
+    "contact": "Belcan"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "Manufacturing Planner",
+    "salary": "39k - 46k Annual 4 day week, flexible hours GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/448EF3A587FFAD0DF8?shid=BF33CD194D239938C13D&page=1",
+    "location": "Ampthill, Bedfordshire",
+    "time": "19 hours ago",
+    "employment_business": "Mane Contract Services",
+    "contact": "Mane Contract Services"
+  },
+  {
+    "summary": "SC Cleared DevOps | London",
+    "position": "x 10 Electrical Technicians",
+    "salary": "38.17 Hourly - 500.00 Hourly GBP",
+    "job_url": "https://www.jobserve.com/gb/en/mob/job/9B0CA82D54EDE2D5FF?shid=BF33CD194D239938C13D&page=1",
+    "location": "Aldermaston, Berkshire",
+    "time": "19 hours ago",
+    "employment_business": "Matchtech",
+    "contact": "Matchtech"
+  }
+]
