@@ -1,6 +1,8 @@
+import tempfile
 import unittest
+from pathlib import Path
 
-from jobserve_scraper import parse_jobs
+from jobserve_scraper import parse_jobs, write_html
 
 
 class JobServeParserTests(unittest.TestCase):
@@ -30,6 +32,18 @@ class JobServeParserTests(unittest.TestCase):
 
         self.assertEqual(len(jobs), 1)
         self.assertEqual(jobs[0].job_url, expected_job_url)
+
+    def test_generated_html_includes_last_updated_timestamp(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_path = Path(temp_dir) / "index.html"
+            write_html(output_path, [])
+
+            html = output_path.read_text(encoding="utf-8")
+
+        self.assertRegex(
+            html,
+            r"<p>Last updated: \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}</p>",
+        )
 
 
 if __name__ == "__main__":

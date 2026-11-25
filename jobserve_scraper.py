@@ -19,6 +19,7 @@ import re
 import ssl
 import time
 from dataclasses import dataclass, asdict
+from datetime import datetime
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
@@ -388,6 +389,7 @@ def write_json(path: Path, jobs: List[Job]) -> None:
 
 
 def write_html(path: Path, jobs: List[Job]) -> None:
+    last_updated = datetime.now().astimezone().isoformat(timespec="seconds")
     rows = []
     for job in jobs:
         rows.append(
@@ -428,6 +430,7 @@ def write_html(path: Path, jobs: List[Job]) -> None:
 </head>
 <body>
   <h1>JobServe Results</h1>
+  <p>Last updated: {escape(last_updated)}</p>
   <p>Total jobs: {len(jobs)}</p>
   <div class=\"table-wrap\">
     <table>
