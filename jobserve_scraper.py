@@ -95,7 +95,9 @@ class JobServeParser(HTMLParser):
         if tag == "a":
             href = attrs_dict.get("href") or ""
             if href:
-                self._current_href = urljoin(self.base_url, href)
+                job_url = urljoin(self.base_url, href)
+                if "/mob/job/" in urlparse(job_url).path:
+                    self._current_href = job_url
 
         if tag == "span":
             self._current_span_class = attrs_dict.get("class") or ""
