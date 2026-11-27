@@ -28,6 +28,7 @@ from urllib.parse import parse_qs, urljoin, urlparse
 from urllib.request import Request, urlopen
 
 URLS = [
+    "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=ACC44A4FF7C56D07",
     "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=78A9B33B42D9BA8B",
     "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=DC2CD21F55D1F339",
     "https://www.jobserve.com/gb/en/mob/jobsearch/results?savedsearchid=4D8DA2CE347175ED",
@@ -146,36 +147,6 @@ class JobServeParser(HTMLParser):
             self._generic_spans = []
 
 
-class ResultsPaginationParser(HTMLParser):
-    """Extract pagination URLs from JobServe results pages."""
-
-    def __init__(self, base_url: str) -> None:
-        super().__init__(convert_charrefs=True)
-        self.base_url = base_url
-        self.pages: set[str] = set()
-        self._inside_pages_container = False
-
-    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        attrs_dict = dict(attrs)
-
-        if tag in {"span", "div"}:
-            class_value = attrs_dict.get("class") or ""
-            class_tokens = set(class_value.split())
-            if "pages" in class_tokens:
-                self._inside_pages_container = True
-
-        if tag == "a":
-            href = attrs_dict.get("href") or ""
-            if not href:
-                return
-            if self._inside_pages_container or "jobsearch/results" in href:
-                self.pages.add(urljoin(self.base_url, href))
-
-    def handle_endtag(self, tag: str) -> None:
-        if tag in {"span", "div"} and self._inside_pages_container:
-            self._inside_pages_container = False
-
-
 class ResultsSummaryParser(HTMLParser):
     """Extract only span.searchval values from the summary block."""
 
@@ -230,26 +201,6 @@ def extract_summary(html: str) -> str:
     parser.feed(html)
     parser.close()
     return parser.summary_text()
-
-
-def extract_results_pages(html: str, source_url: str) -> List[str]:
-    parser = ResultsPaginationParser(base_url=source_url)
-    parser.feed(html)
-    parser.close()
-
-    # Keep only results pages for the same saved search id.
-    source_savedsearchid = parse_qs(urlparse(source_url).query).get("savedsearchid", [""])[0]
-    filtered: List[str] = []
-    for page_url in sorted(parser.pages):
-        parsed = urlparse(page_url)
-        query = parse_qs(parsed.query)
-        if "jobsearch/results" not in parsed.path:
-            continue
-        if query.get("savedsearchid", [""])[0] != source_savedsearchid:
-            continue
-        filtered.append(page_url)
-
-    return filtered
 
 
 def _html_to_lines(html: str) -> List[str]:
@@ -339,6 +290,34 @@ def enrich_jobs_with_details(jobs: List[Job], timeout: int, insecure: bool) -> N
         job.contact = contact
 
 
+def _extract_search_session_id(jobs: Iterable[Job]) -> str:
+    for job in jobs:
+        parsed = urlparse(job.job_url)
+        if parsed.hostname != "www.jobserve.com":
+            continue
+
+        session_ids = parse_qs(parsed.query).get("shid", [])
+        if session_ids and re.fullmatch(r"[A-Za-z0-9_-]+", session_ids[0]):
+            return session_ids[0]
+
+    return ""
+
+
+def _build_results_page_url(search_url: str, session_id: str, page_number: int) -> str:
+    parsed = urlparse(search_url)
+    results_path = parsed.path.rstrip("/")
+    if not results_path.endswith("/jobsearch/results"):
+        raise ValueError(f"Unexpected JobServe results URL: {search_url}")
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", session_id):
+        raise ValueError(f"Invalid JobServe search session ID: {session_id}")
+
+    return parsed._replace(
+        path=f"{results_path}/{session_id}",
+        query=f"page={page_number}",
+        fragment="",
+    ).geturl()
+
+
 def scrape_search_with_pagination(
     search_url: str,
     timeout: int,
@@ -346,27 +325,31 @@ def scrape_search_with_pagination(
     max_pages: int,
     insecure: bool,
 ) -> List[Job]:
-    visited: set[str] = set()
-    to_visit: List[str] = [search_url]
-    jobs: List[Job] = []
+    first_html = fetch_html(search_url, timeout=timeout, insecure=insecure)
+    jobs = parse_jobs(first_html, source_url=search_url)
+    session_id = _extract_search_session_id(jobs)
+    if not session_id:
+        if jobs:
+            print(
+                f"Warning: could not identify the search session for {search_url}; "
+                "only the first page was scraped."
+            )
+        return jobs
 
-    while to_visit and len(visited) < max_pages:
-        page_url = to_visit.pop(0)
-        if page_url in visited:
-            continue
-        visited.add(page_url)
-
+    for page_number in range(2, max_pages + 1):
+        time.sleep(delay)
+        page_url = _build_results_page_url(search_url, session_id, page_number)
         html = fetch_html(page_url, timeout=timeout, insecure=insecure)
         page_jobs = parse_jobs(html, source_url=page_url)
-        enrich_jobs_with_details(page_jobs, timeout=timeout, insecure=insecure)
+        if not page_jobs:
+            break
         jobs.extend(page_jobs)
-
-        discovered_pages = extract_results_pages(html, source_url=search_url)
-        for discovered in discovered_pages:
-            if discovered not in visited and discovered not in to_visit:
-                to_visit.append(discovered)
-
-        time.sleep(delay)
+    else:
+        if jobs:
+            print(
+                f"Warning: reached the {max_pages}-page limit for {search_url}; "
+                "additional results may have been omitted."
+            )
 
     return jobs
 
@@ -389,7 +372,9 @@ def write_json(path: Path, jobs: List[Job]) -> None:
 
 
 def write_html(path: Path, jobs: List[Job]) -> None:
-    last_updated = datetime.now().astimezone().isoformat(timespec="seconds")
+    last_updated = datetime.now().astimezone().isoformat(
+        sep=" ", timespec="seconds"
+    )
     rows = []
     for job in jobs:
         rows.append(
@@ -503,7 +488,6 @@ def main() -> int:
         file_path = Path(args.input_file)
         html = file_path.read_text(encoding="utf-8", errors="replace")
         parsed_jobs = parse_jobs(html, "https://www.jobserve.com")
-        enrich_jobs_with_details(parsed_jobs, timeout=args.timeout, insecure=args.insecure)
         all_jobs.extend(parsed_jobs)
     else:
         for url in URLS:
@@ -522,6 +506,7 @@ def main() -> int:
                 print(f"  Failed: {exc}")
 
     unique_jobs = dedupe_jobs(all_jobs)
+    enrich_jobs_with_details(unique_jobs, timeout=args.timeout, insecure=args.insecure)
 
     output_html_path = Path(args.output_html)
     output_json_path = Path(args.output_json)
