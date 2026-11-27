@@ -18,12 +18,14 @@ import json
 import re
 import ssl
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, asdict
 from datetime import datetime
 from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable, List
+from urllib.error import URLError
 from urllib.parse import parse_qs, urljoin, urlparse
 from urllib.request import Request, urlopen
 
@@ -273,19 +275,30 @@ def extract_job_detail_fields(html: str) -> tuple[str, str]:
 
 
 def enrich_jobs_with_details(jobs: List[Job], timeout: int, insecure: bool) -> None:
+    job_urls = list(dict.fromkeys(job.job_url for job in jobs))
+    if not job_urls:
+        return
+
+    def fetch_details(job_url: str) -> tuple[str, str]:
+        try:
+            detail_html = fetch_html(job_url, timeout=timeout, insecure=insecure)
+        except (URLError, TimeoutError, OSError) as exc:
+            print(f"Warning: could not fetch job details for {job_url}: {exc}")
+            return "", ""
+        return extract_job_detail_fields(detail_html)
+
     detail_cache: dict[str, tuple[str, str]] = {}
+    with ThreadPoolExecutor(max_workers=min(4, len(job_urls))) as executor:
+        futures = {
+            executor.submit(fetch_details, job_url): job_url for job_url in job_urls
+        }
+        for completed, future in enumerate(as_completed(futures), start=1):
+            detail_cache[futures[future]] = future.result()
+            if completed % 25 == 0 or completed == len(job_urls):
+                print(f"  Job details fetched: {completed}/{len(job_urls)}")
 
     for job in jobs:
-        if job.job_url in detail_cache:
-            employment_business, contact = detail_cache[job.job_url]
-        else:
-            try:
-                detail_html = fetch_html(job.job_url, timeout=timeout, insecure=insecure)
-                employment_business, contact = extract_job_detail_fields(detail_html)
-            except Exception:
-                employment_business, contact = "", ""
-            detail_cache[job.job_url] = (employment_business, contact)
-
+        employment_business, contact = detail_cache[job.job_url]
         job.employment_business = employment_business
         job.contact = contact
 
@@ -483,6 +496,7 @@ def main() -> int:
     args = parser.parse_args()
 
     all_jobs: List[Job] = []
+    failed_searches = 0
 
     if args.input_file:
         file_path = Path(args.input_file)
@@ -503,7 +517,12 @@ def main() -> int:
                 print(f"  Parsed jobs (all pages): {len(jobs)}")
                 all_jobs.extend(jobs)
             except Exception as exc:
+                failed_searches += 1
                 print(f"  Failed: {exc}")
+
+        if failed_searches:
+            print("One or more searches failed; existing reports were not overwritten.")
+            return 1
 
     unique_jobs = dedupe_jobs(all_jobs)
     enrich_jobs_with_details(unique_jobs, timeout=args.timeout, insecure=args.insecure)

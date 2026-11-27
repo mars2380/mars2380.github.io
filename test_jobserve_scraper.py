@@ -1,9 +1,18 @@
+from contextlib import redirect_stdout
+from io import StringIO
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from jobserve_scraper import parse_jobs, scrape_search_with_pagination, write_html
+import jobserve_scraper
+from jobserve_scraper import (
+    Job,
+    enrich_jobs_with_details,
+    parse_jobs,
+    scrape_search_with_pagination,
+    write_html,
+)
 
 
 class JobServeParserTests(unittest.TestCase):
@@ -98,6 +107,71 @@ class JobServeParserTests(unittest.TestCase):
                 "https://www.jobserve.com/gb/en/mob/jobsearch/results/SESSION123?page=3",
             ],
         )
+
+    def test_details_are_fetched_once_per_unique_job_url(self):
+        jobs = [
+            Job("Search", "One", "", "https://example.test/one", "London", "1 hour ago"),
+            Job("Search", "Two", "", "https://example.test/two", "London", "2 hours ago"),
+            Job("Search", "One duplicate", "", "https://example.test/one", "London", "1 hour ago"),
+        ]
+        detail_fields = {
+            "https://example.test/one": ("Agency One", "Contact One"),
+            "https://example.test/two": ("Agency Two", "Contact Two"),
+        }
+
+        with (
+            patch(
+                "jobserve_scraper.fetch_html",
+                side_effect=lambda url, timeout, insecure: url,
+            ) as fetch_html,
+            patch(
+                "jobserve_scraper.extract_job_detail_fields",
+                side_effect=lambda html: detail_fields[html],
+            ),
+        ):
+            enrich_jobs_with_details(jobs, timeout=10, insecure=False)
+
+        self.assertEqual(fetch_html.call_count, 2)
+        self.assertEqual(
+            [(job.employment_business, job.contact) for job in jobs],
+            [
+                ("Agency One", "Contact One"),
+                ("Agency Two", "Contact Two"),
+                ("Agency One", "Contact One"),
+            ],
+        )
+
+    def test_failed_searches_do_not_overwrite_existing_reports(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_html = Path(temp_dir) / "index.html"
+            output_json = Path(temp_dir) / "jobs.json"
+            output_html.write_text("previous report", encoding="utf-8")
+            output_json.write_text("previous data", encoding="utf-8")
+
+            with (
+                patch("jobserve_scraper.URLS", ["https://example.test/search"]),
+                patch(
+                    "jobserve_scraper.scrape_search_with_pagination",
+                    side_effect=RuntimeError("network unavailable"),
+                ),
+                patch(
+                    "sys.argv",
+                    [
+                        "jobserve_scraper.py",
+                        "--output-html",
+                        str(output_html),
+                        "--output-json",
+                        str(output_json),
+                    ],
+                ),
+                redirect_stdout(StringIO()) as output,
+            ):
+                exit_code = jobserve_scraper.main()
+
+            self.assertEqual(exit_code, 1)
+            self.assertEqual(output_html.read_text(encoding="utf-8"), "previous report")
+            self.assertEqual(output_json.read_text(encoding="utf-8"), "previous data")
+            self.assertIn("searches failed", output.getvalue())
 
 
 if __name__ == "__main__":
