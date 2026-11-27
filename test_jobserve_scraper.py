@@ -3,12 +3,13 @@ from io import StringIO
 import tempfile
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 import jobserve_scraper
 from jobserve_scraper import (
     Job,
     enrich_jobs_with_details,
+    fetch_html,
     parse_jobs,
     scrape_search_with_pagination,
     write_html,
@@ -16,6 +17,23 @@ from jobserve_scraper import (
 
 
 class JobServeParserTests(unittest.TestCase):
+    def test_fetch_html_retries_temporary_timeouts(self):
+        response = MagicMock()
+        response.__enter__.return_value.read.return_value = b"<html>ok</html>"
+
+        with (
+            patch(
+                "jobserve_scraper.urlopen",
+                side_effect=[TimeoutError("temporary timeout"), response],
+            ) as urlopen,
+            patch("jobserve_scraper.time.sleep") as sleep,
+        ):
+            html = fetch_html("https://example.test/search", timeout=1)
+
+        self.assertEqual(html, "<html>ok</html>")
+        self.assertEqual(urlopen.call_count, 2)
+        sleep.assert_called_once_with(1)
+
     def test_job_url_uses_job_detail_link_not_results_link(self):
         source_url = (
             "https://www.jobserve.com/gb/en/mob/jobsearch/results/"
@@ -172,6 +190,35 @@ class JobServeParserTests(unittest.TestCase):
             self.assertEqual(output_html.read_text(encoding="utf-8"), "previous report")
             self.assertEqual(output_json.read_text(encoding="utf-8"), "previous data")
             self.assertIn("searches failed", output.getvalue())
+
+    def test_empty_scrapes_do_not_overwrite_existing_reports(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_html = Path(temp_dir) / "index.html"
+            output_json = Path(temp_dir) / "jobs.json"
+            output_html.write_text("previous report", encoding="utf-8")
+            output_json.write_text("previous data", encoding="utf-8")
+
+            with (
+                patch("jobserve_scraper.URLS", ["https://example.test/search"]),
+                patch("jobserve_scraper.scrape_search_with_pagination", return_value=[]),
+                patch(
+                    "sys.argv",
+                    [
+                        "jobserve_scraper.py",
+                        "--output-html",
+                        str(output_html),
+                        "--output-json",
+                        str(output_json),
+                    ],
+                ),
+                redirect_stdout(StringIO()) as output,
+            ):
+                exit_code = jobserve_scraper.main()
+
+            self.assertEqual(exit_code, 1)
+            self.assertEqual(output_html.read_text(encoding="utf-8"), "previous report")
+            self.assertEqual(output_json.read_text(encoding="utf-8"), "previous data")
+            self.assertIn("No jobs were returned", output.getvalue())
 
 
 if __name__ == "__main__":

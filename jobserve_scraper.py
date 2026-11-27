@@ -186,8 +186,16 @@ class ResultsSummaryParser(HTMLParser):
 def fetch_html(url: str, timeout: int, insecure: bool = False) -> str:
     req = Request(url=url, headers=REQUEST_HEADERS)
     context = ssl._create_unverified_context() if insecure else None
-    with urlopen(req, timeout=timeout, context=context) as response:
-        return response.read().decode("utf-8", errors="replace")
+    attempt = 0
+    while True:
+        try:
+            with urlopen(req, timeout=timeout, context=context) as response:
+                return response.read().decode("utf-8", errors="replace")
+        except TimeoutError:
+            attempt += 1
+            if attempt == 3:
+                raise
+            time.sleep(attempt)
 
 
 def parse_jobs(html: str, source_url: str) -> List[Job]:
@@ -525,6 +533,10 @@ def main() -> int:
             return 1
 
     unique_jobs = dedupe_jobs(all_jobs)
+    if not unique_jobs:
+        print("No jobs were returned; existing reports were not overwritten.")
+        return 1
+
     enrich_jobs_with_details(unique_jobs, timeout=args.timeout, insecure=args.insecure)
 
     output_html_path = Path(args.output_html)
