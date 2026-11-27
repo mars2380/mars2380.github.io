@@ -432,23 +432,36 @@ def write_html(path: Path, jobs: List[Job]) -> None:
     tr:nth-child(even) {{ background: #fafafa; }}
     a {{ color: #0b5fff; text-decoration: none; }}
     a:hover {{ text-decoration: underline; }}
+    .column-filter {{
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      min-width: 90px;
+      margin-top: 6px;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font: inherit;
+      font-weight: normal;
+      color: #222;
+    }}
   </style>
 </head>
 <body>
   <h1>JobServe Results</h1>
   <p>Last updated: {escape(last_updated)}</p>
-  <p>Total jobs: {len(jobs)}</p>
+  <p id="job-count" aria-live="polite">Showing {len(jobs)} of {len(jobs)} jobs</p>
   <div class=\"table-wrap\">
     <table>
       <thead>
         <tr>
-                    <th>summary</th>
-          <th>position</th>
-          <th>salary</th>
-          <th>location</th>
-          <th>time</th>
-                    <th>employment business</th>
-                    <th>contact</th>
+          <th scope="col">Summary<input class="column-filter" type="search" data-column-filter aria-label="Filter summary" placeholder="Filter..."></th>
+          <th scope="col">Position<input class="column-filter" type="search" data-column-filter aria-label="Filter position" placeholder="Filter..."></th>
+          <th scope="col">Salary<input class="column-filter" type="search" data-column-filter aria-label="Filter salary" placeholder="Filter..."></th>
+          <th scope="col">Location<input class="column-filter" type="search" data-column-filter aria-label="Filter location" placeholder="Filter..."></th>
+          <th scope="col">Time<input class="column-filter" type="search" data-column-filter aria-label="Filter time" placeholder="Filter..."></th>
+          <th scope="col">Employment business<input class="column-filter" type="search" data-column-filter aria-label="Filter employment business" placeholder="Filter..."></th>
+          <th scope="col">Contact<input class="column-filter" type="search" data-column-filter aria-label="Filter contact" placeholder="Filter..."></th>
         </tr>
       </thead>
       <tbody>
@@ -456,6 +469,28 @@ def write_html(path: Path, jobs: List[Job]) -> None:
       </tbody>
     </table>
   </div>
+  <script>
+    const filters = Array.from(document.querySelectorAll("[data-column-filter]"));
+    const rows = Array.from(document.querySelectorAll("tbody tr"));
+    const jobCount = document.getElementById("job-count");
+
+    function filterRows() {{
+      const criteria = filters.map((input) => input.value.trim().toLowerCase());
+      let visibleCount = 0;
+
+      rows.forEach((row) => {{
+        const matches = criteria.every((criterion, index) =>
+          !criterion || row.cells[index].textContent.toLowerCase().includes(criterion)
+        );
+        row.hidden = !matches;
+        if (matches) visibleCount += 1;
+      }});
+
+      jobCount.textContent = "Showing " + visibleCount + " of " + rows.length + " jobs";
+    }}
+
+    filters.forEach((input) => input.addEventListener("input", filterRows));
+  </script>
 </body>
 </html>
 """

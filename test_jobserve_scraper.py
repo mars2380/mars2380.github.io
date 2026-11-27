@@ -73,6 +73,18 @@ class JobServeParserTests(unittest.TestCase):
             r"<p>Last updated: \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}</p>",
         )
 
+    def test_generated_html_has_a_filter_for_each_column(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_path = Path(temp_dir) / "index.html"
+            write_html(output_path, [])
+
+            html = output_path.read_text(encoding="utf-8")
+
+        self.assertEqual(html.count('data-column-filter aria-label='), 7)
+        self.assertIn('aria-label="Filter employment business"', html)
+        self.assertIn("row.cells[index].textContent", html)
+        self.assertIn('id="job-count" aria-live="polite"', html)
+
     def test_scraper_fetches_pages_from_the_jobserve_search_session(self):
         search_url = (
             "https://www.jobserve.com/gb/en/mob/jobsearch/results"
